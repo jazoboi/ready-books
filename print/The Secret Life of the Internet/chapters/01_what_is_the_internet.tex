@@ -101,6 +101,7 @@ The internet moves information the same way — in small steps, very, very fast.
 \end{quickmap}
 
 \begin{diagram}[How information starts its journey from your home to the world.]
+  \resizebox{\linewidth}{!}{%
   \begin{tikzpicture}[>=Stealth, node distance=2.5cm]
     \node[draw=InternetBlue, rounded corners, fill=SkyBlue!20, minimum width=2.6cm, minimum height=1cm] (device) {Your Device};
     \node[draw=WarmOrange!80!black, rounded corners, fill=WarmOrange!20, minimum width=2.2cm, minimum height=1cm, right=of device] (router) {Router};
@@ -110,7 +111,8 @@ The internet moves information the same way — in small steps, very, very fast.
     \draw[dashed,decorate,decoration={snake,amplitude=1.2mm,segment length=6mm},thick,InternetBlue,->] (device) -- node[below=4pt]{radio waves} (router);
     \draw[thick,InternetBlue,->] (router) -- node[below=4pt]{cable} (isp);
     \draw[thick,InternetBlue,->] (isp) -- node[below=4pt]{fibre} (cloud);
-  \end{tikzpicture}
+  \end{tikzpicture}%
+  }
 \end{diagram}
 
 \sectionrule
