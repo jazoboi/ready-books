@@ -1,247 +1,67 @@
 % ============================================================
 %  characters.tex — The Secret Life of the Internet
-%  TikZ-based character illustrations for all 8 characters.
-%  Include this file where character portraits are needed,
-%  or use individual commands like \drawDot, \drawBeeBrowser, etc.
+%  Full-body character illustrations (PNG) for all 8 characters.
+%  Replaces the original TikZ icon placeholders with AI-generated
+%  full-body illustrations.
+%
+%  Images located in: assets/characters/
+%  Usage: \drawDot, \drawBeeBrowser, etc. (same API as before)
+%         \characterparade — all characters in a row
 % ============================================================
 
-% ============================================================
-%  DOT — A glowing packet of information
-%  A small circle with big eyes and a gentle glow
-% ============================================================
+% --- Character height for consistency ---
+\newlength{\charheight}
+\setlength{\charheight}{3.5cm}
+
+% --- Individual character commands ---
+% Each wraps an \includegraphics with alt-text support.
+
 \newcommand{\drawDot}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Glow effect
-    \fill[InternetBlue!15] (0,0) circle (1.4);
-    \fill[InternetBlue!25] (0,0) circle (1.1);
-    % Body
-    \fill[InternetBlue!60] (0,0) circle (0.8);
-    \fill[SkyBlue!80] (0,0) circle (0.65);
-    % Eyes
-    \fill[white] (-0.22,0.15) circle (0.18);
-    \fill[white] (0.22,0.15) circle (0.18);
-    \fill[DarkText] (-0.22,0.17) circle (0.09);
-    \fill[DarkText] (0.22,0.17) circle (0.09);
-    % Sparkle highlights
-    \fill[white] (-0.18,0.22) circle (0.035);
-    \fill[white] (0.26,0.22) circle (0.035);
-    % Smile
-    \draw[DarkText,line width=0.5pt] (-0.15,-0.12) .. controls (0,-0.28) .. (0.15,-0.12);
-    % Label
-    \node[below,font=\small\bfseries\color{InternetBlue}] at (0,-1.0) {Dot};
-  \end{tikzpicture}%
+  \alttext{Dot: a tiny glowing data packet with cheerful eyes}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Dot.png}%
+  }%
 }
 
-% ============================================================
-%  BEE BROWSER — A cheerful bee with tiny goggles
-% ============================================================
 \newcommand{\drawBeeBrowser}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Wings
-    \fill[SkyBlue!30,rotate=25] (0.5,0.5) ellipse (0.45 and 0.25);
-    \fill[SkyBlue!30,rotate=-25] (-0.5,0.5) ellipse (0.45 and 0.25);
-    % Body
-    \fill[SunYellow!90!black] (0,0) ellipse (0.6 and 0.75);
-    % Stripes
-    \fill[DarkText] (-0.6,0.1) rectangle (0.6,-0.05);
-    \fill[DarkText] (-0.55,-0.25) rectangle (0.55,-0.4);
-    % Head
-    \fill[SunYellow!80] (0,0.85) circle (0.45);
-    % Goggles
-    \draw[DarkText,line width=1pt] (-0.2,0.9) circle (0.16);
-    \draw[DarkText,line width=1pt] (0.2,0.9) circle (0.16);
-    \fill[SkyBlue!40] (-0.2,0.9) circle (0.12);
-    \fill[SkyBlue!40] (0.2,0.9) circle (0.12);
-    \draw[DarkText,line width=0.8pt] (-0.04,0.9) -- (0.04,0.9);
-    % Eyes behind goggles
-    \fill[DarkText] (-0.2,0.9) circle (0.05);
-    \fill[DarkText] (0.2,0.9) circle (0.05);
-    % Smile
-    \draw[DarkText,line width=0.5pt] (-0.1,0.7) .. controls (0,0.6) .. (0.1,0.7);
-    % Antennae
-    \draw[DarkText,line width=0.6pt] (-0.1,1.28) -- (-0.15,1.55);
-    \fill[DarkText] (-0.15,1.55) circle (0.05);
-    \draw[DarkText,line width=0.6pt] (0.1,1.28) -- (0.15,1.55);
-    \fill[DarkText] (0.15,1.55) circle (0.05);
-    % Label
-    \node[below,font=\small\bfseries\color{SunYellow!70!black}] at (0,-0.95) {Bee Browser};
-  \end{tikzpicture}%
+  \alttext{Bee Browser: a cheerful blue-striped bee with pilot goggles}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Bee Browser.png}%
+  }%
 }
 
-% ============================================================
-%  WILLA WI-FI — Shimmering concentric wave arcs
-% ============================================================
 \newcommand{\drawWillaWiFi}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Base dot (source)
-    \fill[WarmOrange] (0,-0.5) circle (0.2);
-    % Concentric wave arcs
-    \draw[WarmOrange!90,line width=1.8pt] (0,-0.2) arc[start angle=-90,end angle=90,radius=0.4];
-    \draw[WarmOrange!70,line width=1.5pt] (0,-0.4) arc[start angle=-90,end angle=90,radius=0.6];
-    \draw[WarmOrange!50,line width=1.2pt] (0,-0.6) arc[start angle=-90,end angle=90,radius=0.8];
-    \draw[WarmOrange!30,line width=1pt] (0,-0.8) arc[start angle=-90,end angle=90,radius=1.0];
-    % Left side arcs
-    \draw[WarmOrange!90,line width=1.8pt] (0,-0.2) arc[start angle=-90,end angle=-270,radius=0.4];
-    \draw[WarmOrange!70,line width=1.5pt] (0,-0.4) arc[start angle=-90,end angle=-270,radius=0.6];
-    \draw[WarmOrange!50,line width=1.2pt] (0,-0.6) arc[start angle=-90,end angle=-270,radius=0.8];
-    \draw[WarmOrange!30,line width=1pt] (0,-0.8) arc[start angle=-90,end angle=-270,radius=1.0];
-    % Face on the dot
-    \fill[white] (-0.06,-0.45) circle (0.04);
-    \fill[white] (0.06,-0.45) circle (0.04);
-    \draw[DarkText,line width=0.4pt] (-0.05,-0.58) .. controls (0,-0.63) .. (0.05,-0.58);
-    % Label
-    \node[below,font=\small\bfseries\color{WarmOrange}] at (0,-1.1) {Willa Wi-Fi};
-  \end{tikzpicture}%
+  \alttext{Willa Wi-Fi: a graceful wave-shaped character made of signal arcs}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Willa Wifi.png}%
+  }%
 }
 
-% ============================================================
-%  RORY ROUTER — A friendly box with blinking lights
-% ============================================================
 \newcommand{\drawRoryRouter}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Body (rounded rectangle)
-    \fill[LeafGreen!30] (-1.1,-0.5) -- (-1.1,0.5) -- (1.1,0.5) -- (1.1,-0.5) --
-      (0.9,-0.7) -- (-0.9,-0.7) -- cycle;
-    \draw[LeafGreen!80!black,line width=1pt,rounded corners=3pt] (-1,-0.5) rectangle (1,0.5);
-    % LED lights
-    \fill[CoralRed] (-0.6,0.25) circle (0.08);
-    \fill[LeafGreen] (-0.3,0.25) circle (0.08);
-    \fill[LeafGreen] (0.0,0.25) circle (0.08);
-    \fill[SunYellow] (0.3,0.25) circle (0.08);
-    \fill[InternetBlue] (0.6,0.25) circle (0.08);
-    % Antennae
-    \draw[DarkText,line width=1pt] (-0.6,0.5) -- (-0.7,1.1);
-    \fill[DarkText] (-0.7,1.1) circle (0.06);
-    \draw[DarkText,line width=1pt] (0.6,0.5) -- (0.7,1.1);
-    \fill[DarkText] (0.7,1.1) circle (0.06);
-    % Face
-    \fill[DarkText] (-0.25,-0.05) circle (0.06);
-    \fill[DarkText] (0.25,-0.05) circle (0.06);
-    \draw[DarkText,line width=0.6pt] (-0.2,-0.25) .. controls (0,-0.38) .. (0.2,-0.25);
-    % Label
-    \node[below,font=\small\bfseries\color{LeafGreen!70!black}] at (0,-0.9) {Rory Router};
-  \end{tikzpicture}%
+  \alttext{Rory Router: a friendly orange box with antenna ears and LED lights}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Rory Router.png}%
+  }%
 }
 
-% ============================================================
-%  SUNNY SERVER — A tall rack server glowing gold
-% ============================================================
 \newcommand{\drawSunnyServer}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Glow
-    \fill[SunYellow!15] (-0.7,-1.2) rectangle (0.7,1.4);
-    % Server rack body
-    \fill[SunYellow!30] (-0.6,-1.0) rectangle (0.6,1.2);
-    \draw[SunYellow!70!black,line width=1pt] (-0.6,-1.0) rectangle (0.6,1.2);
-    % Server slots
-    \foreach \y in {-0.7,-0.3,0.1,0.5,0.9} {
-      \fill[SunYellow!60] (-0.45,\y) rectangle (0.45,\y+0.25);
-      \draw[SunYellow!80!black,line width=0.5pt] (-0.45,\y) rectangle (0.45,\y+0.25);
-      % Blinking lights on each slot
-      \fill[LeafGreen] (0.3,\y+0.125) circle (0.04);
-      \fill[InternetBlue] (0.37,\y+0.125) circle (0.04);
-    }
-    % Face on top slot
-    \fill[DarkText] (-0.12,0.98) circle (0.04);
-    \fill[DarkText] (0.12,0.98) circle (0.04);
-    \draw[DarkText,line width=0.4pt] (-0.08,0.88) .. controls (0,0.84) .. (0.08,0.88);
-    % Label
-    \node[below,font=\small\bfseries\color{SunYellow!70!black}] at (0,-1.2) {Sunny Server};
-  \end{tikzpicture}%
+  \alttext{Sunny Server: a tall golden server rack character with kind eyes}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Sunny Server.png}%
+  }%
 }
 
-% ============================================================
-%  CAPTAIN CABLE — A thick cable with a sailor's personality
-% ============================================================
 \newcommand{\drawCaptainCable}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Cable body (thick curved line)
-    \draw[DarkText,line width=6pt] (-1.2,-0.3) .. controls (-0.5,0.8) and (0.5,-0.8) .. (1.2,0.3);
-    \draw[SoftPurple!40,line width=4pt] (-1.2,-0.3) .. controls (-0.5,0.8) and (0.5,-0.8) .. (1.2,0.3);
-    % Inner fibre glow
-    \draw[InternetBlue!60,line width=1.5pt] (-1.2,-0.3) .. controls (-0.5,0.8) and (0.5,-0.8) .. (1.2,0.3);
-    % Captain's hat
-    \fill[DarkText] (-0.3,0.6) -- (-0.05,0.9) -- (0.2,0.6) -- cycle;
-    \fill[SunYellow] (-0.12,0.62) rectangle (0.07,0.67);
-    % Face on the cable (near the top of the curve)
-    \fill[white] (-0.2,0.35) circle (0.08);
-    \fill[white] (0.05,0.35) circle (0.08);
-    \fill[DarkText] (-0.2,0.36) circle (0.04);
-    \fill[DarkText] (0.05,0.36) circle (0.04);
-    \draw[DarkText,line width=0.4pt] (-0.15,0.2) .. controls (-0.05,0.14) .. (0.05,0.2);
-    % Label
-    \node[below,font=\small\bfseries\color{SoftPurple!70!black}] at (0,-0.9) {Captain Cable};
-  \end{tikzpicture}%
+  \alttext{Captain Cable: a serpentine undersea cable with a captain hat}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Captain Cable.png}%
+  }%
 }
 
-% ============================================================
-%  SCOUT SEARCH — A detective with flashlight and index cards
-% ============================================================
 \newcommand{\drawScoutSearch}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Body (coat)
-    \fill[InternetBlue!25] (-0.5,-1.0) -- (-0.6,0.2) -- (0.6,0.2) -- (0.5,-1.0) -- cycle;
-    \draw[InternetBlue!60,line width=0.8pt] (-0.5,-1.0) -- (-0.6,0.2) -- (0.6,0.2) -- (0.5,-1.0) -- cycle;
-    % Head
-    \fill[SunYellow!60] (0,0.6) circle (0.4);
-    \draw[SunYellow!80!black,line width=0.6pt] (0,0.6) circle (0.4);
-    % Detective hat
-    \fill[InternetBlue!50] (-0.45,0.75) -- (-0.3,1.1) -- (0.3,1.1) -- (0.45,0.75) -- cycle;
-    \fill[InternetBlue!40] (-0.55,0.75) rectangle (0.55,0.82);
-    % Eyes
-    \fill[DarkText] (-0.12,0.65) circle (0.05);
-    \fill[DarkText] (0.12,0.65) circle (0.05);
-    % Smile
-    \draw[DarkText,line width=0.4pt] (-0.1,0.45) .. controls (0,0.38) .. (0.1,0.45);
-    % Flashlight (right hand)
-    \fill[SunYellow!80] (0.7,0.0) -- (0.85,0.35) -- (0.95,0.3) -- (0.8,-0.05) -- cycle;
-    \fill[SunYellow!40] (0.85,0.35) -- (1.1,0.7) -- (1.2,0.65) -- (0.95,0.3) -- cycle;
-    % Index cards (left hand)
-    \fill[white] (-0.9,-0.2) rectangle (-0.55,0.1);
-    \fill[LightGray] (-0.87,-0.17) rectangle (-0.58,0.07);
-    \draw[DarkText,line width=0.3pt] (-0.9,-0.2) rectangle (-0.55,0.1);
-    \draw[InternetBlue,line width=0.3pt] (-0.85,-0.05) -- (-0.6,-0.05);
-    \draw[InternetBlue,line width=0.3pt] (-0.85,-0.12) -- (-0.68,-0.12);
-    % Magnifying glass (added flair)
-    \draw[DarkText,line width=1pt] (0.4,-0.6) circle (0.2);
-    \draw[DarkText,line width=1pt] (0.54,-0.74) -- (0.7,-0.9);
-    % Label
-    \node[below,font=\small\bfseries\color{InternetBlue}] at (0,-1.2) {Scout Search};
-  \end{tikzpicture}%
+  \alttext{Scout Search: an energetic detective with a magnifying glass head}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Scout Search.png}%
+  }%
 }
 
-% ============================================================
-%  CLOUD PAL — A smiling cloud with servers visible inside
-% ============================================================
 \newcommand{\drawCloudPal}[1][1]{%
-  \begin{tikzpicture}[scale=#1]
-    % Cloud shape
-    \fill[SkyBlue!30] (0,0.3) ellipse (1.2 and 0.7);
-    \fill[SkyBlue!30] (-0.5,0.1) circle (0.55);
-    \fill[SkyBlue!30] (0.5,0.1) circle (0.55);
-    \fill[SkyBlue!30] (0,-0.1) ellipse (0.9 and 0.5);
-    % Cloud outline
-    \draw[SkyBlue!70!black,line width=1pt]
-      (0,0.3) ellipse (1.2 and 0.7);
-    % Mini servers inside
-    \fill[LightGray] (-0.4,-0.1) rectangle (-0.1,0.3);
-    \draw[DarkText,line width=0.3pt] (-0.4,-0.1) rectangle (-0.1,0.3);
-    \fill[LeafGreen] (-0.15,0.22) circle (0.03);
-    \fill[LeafGreen] (-0.15,0.12) circle (0.03);
-    \fill[LeafGreen] (-0.15,0.02) circle (0.03);
-    %
-    \fill[LightGray] (0.1,-0.1) rectangle (0.4,0.3);
-    \draw[DarkText,line width=0.3pt] (0.1,-0.1) rectangle (0.4,0.3);
-    \fill[InternetBlue] (0.35,0.22) circle (0.03);
-    \fill[InternetBlue] (0.35,0.12) circle (0.03);
-    \fill[InternetBlue] (0.35,0.02) circle (0.03);
-    % Face
-    \fill[DarkText] (-0.2,0.6) circle (0.05);
-    \fill[DarkText] (0.2,0.6) circle (0.05);
-    \draw[DarkText,line width=0.5pt] (-0.15,0.45) .. controls (0,0.37) .. (0.15,0.45);
-    % Label
-    \node[below,font=\small\bfseries\color{SkyBlue!60!black}] at (0,-0.75) {Cloud Pal};
-  \end{tikzpicture}%
+  \alttext{Cloud Pal: a puffy cloud with tiny servers visible inside}{%
+    \includegraphics[height=#1\charheight]{assets/characters/Cloud Pal.png}%
+  }%
 }
 
 % ============================================================
@@ -254,13 +74,13 @@
     \begin{tcolorbox}[enhanced,colback=LightGray,colframe=InternetBlue!40,arc=8pt,boxrule=1pt,
       left=6pt,right=6pt,top=10pt,bottom=10pt]
       \centering
-      \drawDot[0.7]\hspace{0.8cm}%
-      \drawBeeBrowser[0.7]\hspace{0.8cm}%
-      \drawWillaWiFi[0.7]\hspace{0.8cm}%
-      \drawRoryRouter[0.7]\hspace{0.8cm}%
-      \drawSunnyServer[0.7]\hspace{0.8cm}%
-      \drawCaptainCable[0.7]\hspace{0.8cm}%
-      \drawScoutSearch[0.7]\hspace{0.8cm}%
+      \drawDot[0.7]\hspace{0.4cm}%
+      \drawBeeBrowser[0.7]\hspace{0.4cm}%
+      \drawWillaWiFi[0.7]\hspace{0.4cm}%
+      \drawRoryRouter[0.7]\hspace{0.4cm}%
+      \drawSunnyServer[0.7]\hspace{0.4cm}%
+      \drawCaptainCable[0.7]\hspace{0.4cm}%
+      \drawScoutSearch[0.7]\hspace{0.4cm}%
       \drawCloudPal[0.7]%
     \end{tcolorbox}
     \vspace{4pt}{\small\itshape Meet your internet guides!}
