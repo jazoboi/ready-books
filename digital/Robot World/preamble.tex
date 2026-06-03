@@ -12,7 +12,6 @@
 %  - Narrow margins for maximum readable area
 %  - sRGB colour output (screen standard)
 %  - Active hyperlinks with PDF bookmarks
-%  - Tagged PDF structure for accessibility
 %  - Increased line spacing for screen readability
 % ============================================================
 % --- Core packages ---
@@ -66,9 +65,10 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,linkcolor=RoboGreen!80!black,urlcolor=RoboGreen!80!black}
 
-% --- Accessibility: tagged PDF and alt-text support ---
+% --- Accessibility: alt-text support ---
+% Note: keep accsupp, but avoid the accessibility package because it can
+% trigger pdfTeX PDF-version setup errors on MiKTeX at \begin{document}.
 \usepackage{accsupp}
-\usepackage{accessibility}   % Tagged PDF output for screen readers
 \newcommand{\alttext}[2]{%
   \BeginAccSupp{method=escape,ActualText={#1}}%
   #2%
