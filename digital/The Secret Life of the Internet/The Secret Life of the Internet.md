@@ -4,6 +4,43 @@ author: "Fansci Solutions"
 lang: en-GB
 ---
 
+# Meet Your Guides
+
+Here are the friendly characters who will guide you through the secret life of the internet:
+
+![Dot](assets/characters/Dot.png)
+**Dot** — A tiny glowing packet of information — your main guide.
+
+![Bee Browser](assets/characters/Bee Browser.png)
+**Bee Browser** — A cheerful bee who takes you to any website.
+
+![Willa Wi-Fi](assets/characters/Willa Wifi.png)
+**Willa Wi-Fi** — Invisible waves that carry signals through the air.
+
+![Rory Router](assets/characters/Rory Router.png)
+**Rory Router** — The friendly box that directs traffic in your home.
+
+![Sunny Server](assets/characters/Sunny Server.png)
+**Sunny Server** — A powerful computer that stores and sends information.
+
+![Captain Cable](assets/characters/Captain Cable.png)
+**Captain Cable** — The undersea cable that carries data across oceans.
+
+![Scout Search](assets/characters/Scout Search.png)
+**Scout Search** — The detective who finds anything on the internet.
+
+![Cloud Pal](assets/characters/Cloud Pal.png)
+**Cloud Pal** — Faraway computers that store your files safely.
+
+---
+
+## Welcome
+
+Welcome, explorer! In this book, we will follow tiny bits of information as they zip through homes, neighbourhoods, oceans, and giant computer buildings. We will meet friendly helpers and learn how websites, Wi-Fi, routers, servers, search engines, and the cloud all work together.
+
+---
+
+
 # What Is the Internet?
 
 *You tap a screen, press play, and a video appears in seconds. But how does it get there? Let’s find out!*
