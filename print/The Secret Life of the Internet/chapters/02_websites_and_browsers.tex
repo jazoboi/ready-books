@@ -1,0 +1,198 @@
+% ============================================================
+%  Chapter 2 — Websites and Browsers
+%  The Secret Life of the Internet
+% ============================================================
+
+\chapter{Websites and Browsers}
+
+\chapteropening{%
+  There are billions of websites on the internet.
+  How do you get to exactly the right one?
+  Let Bee Browser be your guide!
+}
+\chapterbadge{Buzzing Through Website City}
+
+% --- Opening story ---
+\section*{Welcome to the Website Neighbourhood}
+
+Dot had guided Sam to the edge of the internet highway.
+Now it was time to visit a website.
+
+A cheerful yellow bee wearing tiny goggles buzzed into view.
+
+\character{Bee Browser}{Hello! I'm Bee Browser.
+  My job is to take you anywhere on the internet you want to go.
+  Just tell me the address and off we fly!}
+
+Sam looked around.
+In every direction there were colourful buildings —
+a towering library, a bright game arcade, a cosy weather station,
+a giant video cinema, and hundreds more stretching to the horizon.
+
+\begin{picturethis}
+  Imagine a huge colourful city where every single building is a website.
+  The library building is a news website.
+  The arcade is a games website.
+  The cinema is a video website.
+  Each building has its very own address — and Bee Browser knows how to find them all!
+\end{picturethis}
+
+\sectionrule
+
+% --- What is a website? ---
+\section*{What Is a Website?}
+
+\begin{funfact}
+There are over 1.1 billion websites on the internet, but fewer than 200 million are actively visited.
+\end{funfact}
+
+A \term{website} is a collection of pages stored on a special computer called a \term{server}.
+Those pages can hold words, pictures, videos, buttons, sounds, and much more.
+
+Every website has a unique address called a \term{URL}
+(which stands for Uniform Resource Locator — quite a mouthful, so most people just say ``web address'').
+
+A web address looks like this:
+
+\begin{center}
+  \large\ttfamily\color{InternetBlue}
+  https://www.example.com
+\end{center}
+
+\begin{quickmap}
+  \textbf{Breaking down a web address:}
+  \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item \texttt{https://} — a signal that the connection is \emph{secure} (the ``s'' stands for secure).
+    \item \texttt{www} — short for ``World Wide Web''.
+    \item \texttt{example} — the name of the website.
+    \item \texttt{.com} — the type of website (commercial, organisation, country, etc.).
+  \end{enumerate}
+\end{quickmap}
+
+\begin{diagram}[What happens in a flash when you press Enter.]
+  \begin{tikzpicture}[>=Stealth, node distance=0.8cm]
+    \node[draw=InternetBlue, rounded corners, fill=SkyBlue!25, minimum width=3.6cm, minimum height=0.9cm] (s1) {You type URL};
+    \node[draw=WarmOrange!80!black, rounded corners, fill=WarmOrange!22, minimum width=3.6cm, minimum height=0.9cm, below=of s1] (s2) {Browser asks DNS};
+    \node[draw=LeafGreen!80!black, rounded corners, fill=LeafGreen!20, minimum width=3.6cm, minimum height=0.9cm, below=of s2] (s3) {DNS returns IP};
+    \node[draw=SoftPurple!80!black, rounded corners, fill=SoftPurple!20, minimum width=3.6cm, minimum height=0.9cm, below=of s3] (s4) {Browser contacts Server};
+    \node[draw=CoralRed!80!black, rounded corners, fill=CoralRed!16, minimum width=3.6cm, minimum height=0.9cm, below=of s4] (s5) {Server sends page};
+    \node[draw=InternetBlue!80!black, rounded corners, fill=SunYellow!25, minimum width=3.6cm, minimum height=0.9cm, below=of s5] (s6) {Browser displays page};
+    \draw[thick,->,InternetBlue] (s1) -- (s2);
+    \draw[thick,->,InternetBlue] (s2) -- (s3);
+    \draw[thick,->,InternetBlue] (s3) -- (s4);
+    \draw[thick,->,InternetBlue] (s4) -- (s5);
+    \draw[thick,->,InternetBlue] (s5) -- (s6);
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+% --- What is a browser? ---
+\section*{What Is a Browser?}
+
+A \term{browser} is a programme on your device that lets you visit and view websites.
+
+Think of it this way:
+
+\begin{picturethis}
+  Bee Browser is like a taxi driver.
+  You tell the taxi driver the address — say, \texttt{www.mycoollibrary.com} —
+  and the taxi driver takes you straight there.
+  The browser is the taxi.
+  The web address is where you want to go.
+  The website that appears on your screen is your destination.
+\end{picturethis}
+
+Popular browsers you might recognise:
+\begin{itemize}
+  \item Chrome
+  \item Firefox
+  \item Safari
+  \item Edge
+\end{itemize}
+
+They all do the same basic job: \textbf{take your web address and bring the website back to your screen}.
+
+\sectionrule
+
+% --- How a browser fetches a page ---
+\section*{What Happens When You Press Enter?}
+
+It feels like magic, but here is what really happens in just a fraction of a second:
+
+\begin{quickmap}
+  \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item You type a web address and press Enter.
+    \item Your browser asks a special helper called a \term{DNS server},
+          ``What is the number address for this website?''
+    \item The DNS server replies with the server's \term{IP address} (a number like 192.0.2.1).
+    \item Your browser travels to that IP address and says, ``Please send me your page!''
+    \item The server sends back the page in pieces.
+    \item Your browser puts all the pieces together and displays them on your screen.
+  \end{enumerate}
+\end{quickmap}
+
+\character{Bee Browser}{It's like using a phone book!
+  You look up a name, find the phone number, and call.
+  DNS is the internet's phone book.}
+
+\sectionrule
+
+% --- HTML teaser ---
+\section*{What Are Websites Made Of?}
+
+Websites are built with a special language called \term{HTML}
+(HyperText Markup Language).
+HTML is a set of instructions that tells your browser what to show:
+headings, paragraphs, pictures, links, and buttons.
+
+You do not need to know HTML to use the internet.
+But it is fun to know that every website you visit is built from
+these hidden instructions — like a recipe that your browser reads and cooks into the page you see.
+
+\sectionrule
+
+\begin{newwords}
+  \begin{description}[labelwidth=3.2cm, leftmargin=3.4cm]
+    \item[\term{Website}]  A collection of pages on the internet, stored on a server.
+    \item[\term{Browser}]  A programme (like Chrome or Safari) that lets you visit websites.
+    \item[\term{URL}]      A web address — the unique location of a website.
+    \item[\term{DNS}]      A system that turns website names into number addresses.
+    \item[\term{IP address}] A number that identifies a device or server on the internet.
+    \item[\term{HTML}]     The language used to build web pages.
+  \end{description}
+\end{newwords}
+
+\sectionrule
+
+\begin{tryit}
+  \textbf{Match the address to the building!}
+
+  Draw lines to match each website type to the right building:
+
+  \begin{center}
+    \begin{tabular}{ll}
+      \textbf{Website type} & \textbf{Building in the city} \\[4pt]
+      News website          & Library \\
+      Video website         & Cinema \\
+      Games website         & Arcade \\
+      Weather website       & Weather station \\
+      Shopping website      & Shopping mall \\
+    \end{tabular}
+  \end{center}
+
+  \emph{Now try opening a browser on your device and type in a web address you know.
+  What building would that website be in our internet city?}
+\end{tryit}
+
+\sectionrule
+
+\begin{bigidea}
+  A \textbf{website} is a place on the internet with its own address.
+  A \textbf{browser} is like a taxi that takes you there —
+  just type the address and it fetches the page for you.
+\end{bigidea}
+
+\character{Dot}{Now you know how to visit websites!
+  But wait — how does your tablet even connect to the internet in the first place?
+  Let's visit Willa Wi-Fi and Rory Router next!}

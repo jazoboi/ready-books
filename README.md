@@ -6,89 +6,96 @@
 
 ---
 
+## Repository Structure
+
+```
+ready-books/
+├── print/                    # Print-optimized editions
+│   ├── The Secret Life of the Internet/
+│   ├── Inside a Smartphone/
+│   └── Robot World/
+├── digital/                  # Digital/screen-optimized editions
+│   ├── The Secret Life of the Internet/
+│   ├── Inside a Smartphone/
+│   └── Robot World/
+├── Review.txt                # Full pre-publication review
+└── README.md                 # This file
+```
+
+Both `print/` and `digital/` contain identical content (chapters, glossary, quiz, teacher guide) but differ in their `preamble.tex` settings for output optimization.
+
+---
+
+## Print vs Digital — Key Differences
+
+| Setting | Print Edition | Digital Edition |
+|---------|--------------|-----------------|
+| Trim / page size | 7 × 9 in (children's non-fiction standard) | 8.5 × 11 in (tablet/screen) |
+| Margins | Inner 1.1 in (gutter-safe), outer 0.85 in | 0.75 in all sides (max content area) |
+| Colour model | CMYK (press-ready) | sRGB (screen standard) |
+| Hyperlinks | Hidden (no blue text in print) | Active, coloured, clickable |
+| PDF bookmarks | Disabled | Enabled + expanded by default |
+| Line spacing | Standard (1.0) | 1.15× (screen readability) |
+| Accessibility | Alt-text macro available | Tagged PDF (`accessibility` package) |
+| Diagram labels | `\diagramlabel{}` enforces 10pt minimum | `\screendiagram` auto-scales to viewport |
+
+---
+
 ## Series Status
 
-| # | Title | Status | Age Band |
-|---|-------|--------|----------|
-| 1 | The Secret Life of the Internet | ✅ Review fixes applied | 9–12 |
-| 2 | Inside a Smartphone: The Tiny World in Your Hand | ✅ Review fixes applied | 9–12 |
-| 3 | Robot World: Meet the Machines That Help Us | ✅ Review fixes applied (substantial) | 10–13 |
+| # | Title | Age Band | Status |
+|---|-------|----------|--------|
+| 1 | The Secret Life of the Internet | 9–12 | ✅ Review fixes applied |
+| 2 | Inside a Smartphone: The Tiny World in Your Hand | 9–12 | ✅ Review fixes applied |
+| 3 | Robot World: Meet the Machines That Help Us | 10–13 | ✅ Review fixes applied (substantial) |
 
 ---
 
 ## Review Changes Applied
 
-Based on the Professional Pre-Publication Review (see `Review.txt`), the following
-changes have been applied to this repository:
+Based on the Professional Pre-Publication Review (see `Review.txt`):
 
 ### Book 1 — The Secret Life of the Internet
-
-- [x] **Recap boxes** added to Chapters 4, 5, and 6 ("Remember So Far") to reduce cognitive density in the networking/packet sections
-- [x] **"Digital Explorer's Backpack"** naming confirmed (was already applied in source)
-- [x] Accessibility `\alttext` macro already present in preamble
+- [x] Recap boxes in Chapters 4, 5, 6 ("Remember So Far")
+- [x] "Digital Explorer's Backpack" naming confirmed
+- [x] Accessibility `\alttext` macro in preamble
 
 ### Book 2 — Inside a Smartphone
-
-- [x] **Pronunciation guides** added to New Words sections in Chapters 2, 3, and 4 (the most terminology-dense chapters)
-- [x] **Gloves oversimplification** already qualified ("Most ordinary gloves…") in source
-- [x] **Chapter 10 tone shift** smoothed with scenario-based `picturethis` boxes (app permissions analogy, screen time narrative)
+- [x] Pronunciation guides in New Words (Chapters 2, 3, 4)
+- [x] "Most ordinary gloves…" qualification confirmed
+- [x] Chapter 10 tone smoothed with scenario `picturethis` boxes
 
 ### Book 3 — Robot World
-
-- [x] **Age repositioning** — visible "Recommended for ages 10–13" note added to Welcome page
-- [x] **Series bridge** — "Before You Begin" box linking to Books 1 & 2 added to front matter
-- [x] **Glossary duplicates removed** — "Autonomy" (duplicate of "Autonomous") and second "Infrared" entry
-- [x] **Cross-book callback** added to Chapter 3 (sensors link to Book 2's Sensa)
-- [x] **Cross-book callback** added to Chapter 10 opening (recap of internet + smartphone sensors)
-- [x] **Guided reflection prompts** — "Think and Talk" ethics discussion box added to Chapter 10
-
----
-
-## Remaining Open Items (Not Yet Applied)
-
-These items require design/production work beyond text editing:
-
-### Production / Design
-- [ ] Tagged PDFs + alt text for all diagrams (accessibility, Critical)
-- [ ] Clickable TOC / EPUB navigation for digital versions
-- [ ] Reduce text density by 10–15% across all books; increase whitespace
-- [ ] Enlarge diagram labels (minimum 9–10pt for print)
-- [ ] Mobile-optimized layouts / vector SVG diagrams for EPUB
-- [ ] CMYK proof testing, spine-width verification, gutter spacing checks
-- [ ] Build EPUB3 versions with scalable SVG diagrams
-
-### Content / Editorial
-- [ ] Stronger diversity and human representation in illustrations
-- [ ] Cover image for Robot World (`assets/cover.png`)
-- [ ] Refine character TikZ illustrations into full-body drawings (all books)
-- [ ] Final proofread and page-break tuning (all books)
-- [ ] First compile test of Robot World on MiKTeX
-- [ ] Consider adding Chapter 11 (connectivity) to Book 2
+- [x] Age repositioned to 10–13 (visible on Welcome page)
+- [x] "Before You Begin" series bridge in front matter
+- [x] Glossary deduplicated ("Autonomy", "Infrared")
+- [x] Cross-book callbacks in Chapters 3 and 10
+- [x] "Think and Talk" guided reflection prompts in Chapter 10
 
 ---
 
 ## Compile Instructions
 
-Each book compiles independently:
+Each book compiles independently from within its folder:
 
 ```bash
-cd "The Secret Life of the Internet"
+cd print/The\ Secret\ Life\ of\ the\ Internet
 pdflatex main.tex
 makeindex main.idx
 pdflatex main.tex
 pdflatex main.tex
 ```
 
-Three passes resolve cross-references, index, and TOC.
+Three passes resolve cross-references, index, and TOC. Same process for `digital/`.
 
 ---
 
-## File Structure (per book)
+## File Structure (per book, both editions)
 
 ```
 <Book Title>/
 ├── main.tex              # Root document
-├── preamble.tex          # Packages, colours, callout macros
+├── preamble.tex          # Edition-specific settings (PRINT or DIGITAL)
 ├── copyright.tex         # Copyright / imprint page
 ├── glossary.tex          # Back-of-book glossary
 ├── quiz.tex              # End-of-book quiz + answer key
@@ -99,3 +106,19 @@ Three passes resolve cross-references, index, and TOC.
 └── chapters/
     ├── 01_*.tex … 10_*.tex
 ```
+
+---
+
+## Remaining Open Items
+
+### Production
+- [ ] CMYK proof testing on print editions
+- [ ] Spine-width verification and gutter spacing checks
+- [ ] EPUB3 conversion from digital edition source
+- [ ] Cover image for Robot World
+
+### Content
+- [ ] Stronger diversity in illustrations
+- [ ] Refine character TikZ to full-body drawings
+- [ ] Final proofread and page-break tuning
+- [ ] Consider Chapter 11 (connectivity) for Book 2

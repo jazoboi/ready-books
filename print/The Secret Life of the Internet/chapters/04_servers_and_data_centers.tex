@@ -1,0 +1,190 @@
+% ============================================================
+%  Chapter 4 — Servers and Data Centres
+%  The Secret Life of the Internet
+% ============================================================
+
+\chapter{Servers and Data Centres}
+
+\chapteropening{%
+  Every website, video, and game lives somewhere.
+  But where?  Come and visit the giant buildings that hold it all!
+}
+\chapterbadge{Welcome to Server City}
+
+% --- Opening story ---
+\section*{The Giant Warehouse of the Internet}
+
+Dot had zoomed through the Wi-Fi signal, past the router,
+and along a cable into the bigger internet.
+
+Up ahead was a colossal building, almost the size of several football fields,
+humming with the sound of thousands of fans.
+The lights blinked in long rows, like a city skyline made of computers.
+
+\character{Dot}{This is a \textbf{data centre} — one of the busiest places on the internet!
+  Somewhere inside, a friendly helper called Sunny Server is waiting for us.}
+
+\sectionrule
+
+% --- What is a server? ---
+\section*{What Is a Server?}
+
+A \term{server} is a powerful computer that stores information and sends it to people who ask for it.
+
+\begin{funfact}
+Google's data centres process over 8.5 billion searches every single day. That's about 99,000 searches every second!
+\end{funfact}
+
+When you open a website, your browser sends a request to a server.
+The server finds all the pieces of that website — the words, the pictures, the buttons, the videos —
+and sends them back to your browser.
+
+\begin{picturethis}
+  Imagine a huge library.
+  The librarian (the server) knows where every book (piece of information) is kept.
+  When you ask for a book, the librarian fetches it and brings it to you.
+  The server is the librarian.
+  The books are the information.
+  You are the person asking.
+\end{picturethis}
+
+Inside the data centre, Dot found a row of tall metal shelves.
+Each shelf held many flat computers stacked on top of each other.
+One of them glowed a warm golden colour.
+
+\character{Sunny Server}{Hello!  I store billions of web pages, photos, and videos.
+  When someone asks for something I have,
+  I pack it up and send it straight to them — as fast as I can!}
+
+\sectionrule
+
+% --- What is a Data Centre? ---
+\section*{What Is a Data Centre?}
+
+A \term{data centre} is a large building that holds hundreds or even thousands of servers.
+
+Data centres are carefully designed to keep all those servers running smoothly:
+
+\begin{itemize}
+  \item \textbf{Cooling systems} — Servers get very hot when they work hard, so powerful fans and air conditioners keep the temperature just right.
+  \item \textbf{Reliable power} — data centres have backup generators so that if the electricity goes out, the servers keep running.
+  \item \textbf{Security} — Only authorised people can get inside. Many have cameras, locks, and security guards.
+  \item \textbf{Lots of cables} — Miles and miles of cables connect the servers to each other and to the internet.
+\end{itemize}
+
+\begin{picturethis}
+  Picture an apartment building — but instead of flats with people,
+  every flat is a server computer.
+  The building manager (the data centre team) makes sure the heating works,
+  the electricity stays on, and the right people have access.
+  That building is the data centre.
+\end{picturethis}
+
+\sectionrule
+
+
+% --- Recap checkpoint (added per review: reduce cognitive density) ---
+\begin{tcolorbox}[enhanced,colback=SunYellow!12,colframe=SunYellow!70!black,arc=6pt,boxrule=1pt,
+  fonttitle=\bfseries\large, title={\faRetweet\quad Remember So Far}]
+  \begin{itemize}
+    \item The \textbf{internet} is a giant network of connected devices (Chapter~1).
+    \item \textbf{Browsers} take us to websites, which are stored somewhere on the internet (Chapter~2).
+    \item \textbf{Wi-Fi} and \textbf{routers} get your request out of your home (Chapter~3).
+    \item Now you have arrived at the \textbf{server} — the powerful computer that stores the website you asked for!
+  \end{itemize}
+\end{tcolorbox}
+
+% --- Request and response ---
+\section*{Fetch and Send}
+
+\begin{quickmap}
+  \textbf{What happens when you load a web page:}
+  \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Your browser sends a \term{request}: ``Please send me this page!''
+    \item The request travels through Wi-Fi, the router, your ISP, and the internet to the server.
+    \item Sunny Server finds all the parts of that page:
+          the text, images, and layout instructions.
+    \item The server packs them up and sends a \term{response} back.
+    \item The response travels back the same way to your device.
+    \item Your browser assembles all the parts and shows you the finished page.
+  \end{enumerate}
+\end{quickmap}
+
+\begin{diagram}[Request and response travelling between you and a distant server.]
+  \resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[>=Stealth, node distance=1.15cm]
+    \node[draw=InternetBlue, rounded corners, fill=SkyBlue!20, minimum width=2.2cm, minimum height=0.9cm] (d) {Your Device};
+    \node[draw=WarmOrange!80!black, rounded corners, fill=WarmOrange!20, minimum width=1.8cm, minimum height=0.9cm, right=of d] (r) {Router};
+    \node[draw=LeafGreen!80!black, rounded corners, fill=LeafGreen!20, minimum width=1.4cm, minimum height=0.9cm, right=of r] (i) {ISP};
+    \node[draw=SoftPurple!80!black, rounded corners, fill=SoftPurple!20, minimum width=1.9cm, minimum height=0.9cm, right=of i] (n) {Internet};
+    \node[draw=CoralRed!80!black, rounded corners, fill=CoralRed!16, minimum width=2.6cm, minimum height=0.9cm, right=of n] (s) {Data Centre / Server};
+
+    \draw[<->,thick,InternetBlue] (d) -- (r);
+    \draw[<->,thick,InternetBlue] (r) -- (i);
+    \draw[<->,thick,InternetBlue] (i) -- (n);
+    \draw[<->,thick,InternetBlue] (n) -- (s);
+
+    \node[font=\small\bfseries\color{InternetBlue}] at ($(d)!0.5!(s)+(0,0.8)$) {request $\rightarrow$};
+    \node[font=\small\bfseries\color{WarmOrange}] at ($(d)!0.5!(s)+(0,-0.8)$) {$\leftarrow$ response};
+  \end{tikzpicture}%
+  }
+\end{diagram}
+
+All of this happens in less than a second!
+
+\sectionrule
+
+% --- Big companies and their data centres ---
+\section*{Who Runs These Giant Buildings?}
+
+Many big companies around the world run data centres.
+Large video and search websites have data centres on multiple continents,
+so that no matter where you are in the world,
+there is a server nearby that can answer your request quickly.
+
+The closer the server is to you, the faster the response.
+That is why some videos load almost immediately even from the other side of the world —
+there is likely a copy stored on a server much closer to your home.
+
+\sectionrule
+
+\begin{newwords}
+  \begin{description}[labelwidth=3.5cm, leftmargin=3.7cm]
+    \item[\term{Server}]       A powerful computer that stores information and sends it to people who ask.
+    \item[\term{Data centre}]  A large building full of servers, kept cool, powered, and secure.
+    \item[\term{Request}]      A message from your browser asking a server for information.
+    \item[\term{Response}]     The answer from the server, containing the web page or data you asked for.
+    \item[\term{Cache}]        A nearby copy of data stored to help deliver it faster.
+  \end{description}
+\end{newwords}
+
+\sectionrule
+
+\begin{tryit}
+  \textbf{Help Sunny Server pack the right pieces!}
+
+  A visitor has asked for a web page about penguins.
+  Circle all the things Sunny Server should pack and send:
+
+  \begin{center}
+    \begin{tabularx}{\linewidth}{Y Y Y}
+      A photo of a penguin & A penguin fact paragraph & A recipe for pasta \\
+      A video of penguins & A headline: ``Meet the Penguin!'' & A map of Antarctica \\
+      A button: ``Learn More'' & A picture of a car & A penguin sounds clip \\
+    \end{tabularx}
+  \end{center}
+
+  \emph{Everything related to penguins gets packed — the rest stays on the shelf!}
+\end{tryit}
+
+\sectionrule
+
+\begin{bigidea}
+  \textbf{Servers} are powerful computers that store and send information.
+  They live in giant buildings called \textbf{data centres},
+  which keep them cool, powered, and ready to answer millions of requests every second.
+\end{bigidea}
+
+\character{Sunny Server}{Next stop is even more amazing — the cables under the ocean!
+  Some of my replies travel thousands of kilometres under the sea to reach you.
+  Captain Cable will show you how!}

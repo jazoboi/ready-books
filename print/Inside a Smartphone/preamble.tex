@@ -1,0 +1,291 @@
+% ============================================================
+%  preamble.tex — Inside a Smartphone: The Tiny World in Your Hand
+%  Shared packages, colours, fonts, and reusable visual
+%  callout macros for a kid-friendly, visual-first LaTeX book.
+%  Mirrors the style established in The Secret Life of the Internet.
+% ============================================================
+
+
+% ============================================================
+%  PRINT EDITION SETTINGS
+%  - Trim: 7×9 in (standard children's non-fiction)
+%  - Gutter-safe inner margin (1.1 in)
+%  - CMYK colour output via xcolor
+%  - Hidden hyperlinks (no blue text in print)
+%  - Minimum diagram label size: 10pt
+% ============================================================
+% --- Core packages ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{sourcesanspro}
+\usepackage[
+  paperwidth=7in,           % Standard children's non-fiction trim
+  paperheight=9in,
+  inner=1.1in,              % Wider inner margin for binding/gutter
+  outer=0.85in,
+  top=1.1in,
+  bottom=1.0in,
+  footskip=0.4in
+]{geometry}
+\usepackage[cmyk]{xcolor}  % CMYK colour model for print output
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes,shapes.symbols,positioning,decorations.pathmorphing,calc,shadows,fit,backgrounds}
+\usepackage{fontawesome5}
+\usepackage{mdframed}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{needspace}
+\usepackage{etoolbox}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{fancyhdr}
+
+% --- Book-wide colour palette ---
+% Primary accent: TechPurple (smartphone theme).
+% Secondary colours match Book 1 for series consistency.
+\definecolor{TechPurple}{HTML}{7B1FA2}
+\definecolor{WarmOrange}{HTML}{FF9800}
+\definecolor{LeafGreen}{HTML}{4CAF50}
+\definecolor{SunYellow}{HTML}{FFC107}
+\definecolor{CoralRed}{HTML}{F44336}
+\definecolor{SoftPurple}{HTML}{9C27B0}
+\definecolor{SkyBlue}{HTML}{87CEEB}
+\definecolor{LightGray}{HTML}{F5F5F5}
+\definecolor{DarkText}{HTML}{212121}
+\definecolor{NeonGreen}{HTML}{00BFA5}   % teal, for Experiment boxes
+\definecolor{SmartBlue}{HTML}{1565C0}  % deep blue for diagrams
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=TechPurple,urlcolor=TechPurple}
+
+% --- Accessibility: tagged PDF and alt-text support ---
+\usepackage{accsupp}
+\newcommand{\alttext}[2]{%
+  \BeginAccSupp{method=escape,ActualText={#1}}%
+  #2%
+  \EndAccSupp{}%
+}
+
+% --- Index support ---
+\usepackage{makeidx}
+\makeindex
+
+% --- Chapter title styling ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{TechPurple}}
+  {\chaptertitlename\ \thechapter}{12pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{14pt}{16pt}
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries\color{TechPurple}}{\thesection}{0.6em}{}
+\titleformat{\subsection}
+  {\normalfont\Large\bfseries\color{WarmOrange}}{\thesubsection}{0.6em}{}
+
+\AtBeginDocument{\color{DarkText}}
+
+% --- Header / footer ---
+\setlength{\headheight}{14pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\small\bfseries\color{TechPurple}\leftmark}}
+\fancyfoot[C]{\color{TechPurple}\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\color{TechPurple}\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+\makeatletter
+\renewcommand{\cleardoublepage}{%
+  \clearpage
+  \if@twoside
+    \ifodd\c@page\else
+      \hbox{}%
+      \thispagestyle{empty}%
+      \newpage
+      \if@twocolumn\hbox{}\newpage\fi
+    \fi
+  \fi
+}
+\makeatother
+\preto{\section}{\needspace{8\baselineskip}}
+\preto{\subsection}{\needspace{6\baselineskip}}
+
+% ============================================================
+%  REUSABLE CALLOUT BOXES
+% ============================================================
+
+% --- Big Idea (purple) ---
+\newtcolorbox{bigidea}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=TechPurple!10, colframe=TechPurple,
+  fonttitle=\bfseries\large,
+  title={\faLightbulb\quad Big Idea},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Imagine This (orange) ---
+\newtcolorbox{picturethis}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=WarmOrange!10, colframe=WarmOrange,
+  fonttitle=\bfseries\large,
+  title={\faPaintBrush\quad Imagine This},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Try It (green) ---
+\newtcolorbox{tryit}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=LeafGreen!10, colframe=LeafGreen,
+  fonttitle=\bfseries\large,
+  title={\faHandPointRight\quad Try It},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Experiment (teal) — new for Book 2 ---
+\newtcolorbox{experiment}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=NeonGreen!10, colframe=NeonGreen,
+  fonttitle=\bfseries\large,
+  title={\faFlask\quad Experiment},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Quick Map (yellow) ---
+\newtcolorbox{quickmap}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=SunYellow!15, colframe=SunYellow!80!black,
+  fonttitle=\bfseries\large,
+  title={Quick Map},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- New Words (soft purple) ---
+\newtcolorbox{newwords}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=SoftPurple!8, colframe=SoftPurple,
+  fonttitle=\bfseries\large,
+  title={\faBook\quad New Words},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Did You Know? (coral red) ---
+\newtcolorbox{funfact}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=CoralRed!8, colframe=CoralRed,
+  fonttitle=\bfseries\large,
+  title={\faStar\quad Did You Know?},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+
+% --- Print: minimum diagram label size (10pt) ---
+\newcommand{\diagramlabel}[1]{{\fontsize{10}{12}\selectfont #1}}
+% ============================================================
+%  DIAGRAM WRAPPER
+% ============================================================
+\makeatletter
+\newenvironment{diagram}[1][]{%
+  \def\@diagramcaption{#1}%
+  \begin{figure}[htbp]
+    \centering
+    \BeginAccSupp{method=escape,ActualText={#1}}%
+    \begin{tcolorbox}[
+      enhanced,
+      colback=SkyBlue!8, colframe=SkyBlue!50!black,
+      boxrule=0.8pt, arc=6pt,
+      left=8pt, right=8pt, top=8pt, bottom=8pt
+    ]
+    \centering
+}{%
+    \end{tcolorbox}
+    \EndAccSupp{}%
+    \ifx\@diagramcaption\@empty\else
+      \vspace{4pt}{\small\itshape\@diagramcaption}%
+    \fi
+  \end{figure}%
+}
+\makeatother
+
+% ============================================================
+%  CHARACTER CALLOUT HELPER
+%  Usage: \character{Chip}{Let me show you how fast I can think!}
+% ============================================================
+\newcommand{\character}[2]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=TechPurple!8, colframe=TechPurple!60!black,
+    arc=10pt, boxrule=1pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt,
+    title={\textbf{\Large #1}},
+    fonttitle=\bfseries\color{DarkText},
+    before upper=\RaggedRight
+  ]
+  \itshape ``#2''
+  \end{tcolorbox}%
+}
+
+% ============================================================
+%  CHAPTER OPENING HELPER
+% ============================================================
+\newcommand{\chapteropening}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=LightGray, colframe=TechPurple!40,
+    arc=4pt, boxrule=0.8pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    before upper=\RaggedRight
+  ]
+  \large\itshape #1
+  \end{tcolorbox}%
+  \vspace{6pt}%
+}
+
+% --- Chapter badge ---
+\newcommand{\chapterbadge}[1]{%
+  \begin{center}
+    \begin{tcolorbox}[enhanced,colback=SunYellow!20,colframe=SunYellow!70!black,
+      arc=10pt,boxrule=1pt,left=10pt,right=10pt,top=8pt,bottom=8pt]
+      \centering\Large\bfseries\color{TechPurple}#1
+    \end{tcolorbox}
+  \end{center}
+}
+
+% --- Named chapter (front/back matter) ---
+\newcommand{\namedchapter}[1]{%
+  \chapter*{#1}%
+  \markboth{#1}{#1}%
+}
+
+% --- Section divider ---
+\newcommand{\sectionrule}{%
+  \vspace{4pt}%
+  {\color{TechPurple!40}\hrule height 0.6pt}%
+  \vspace{10pt}%
+}
+
+% --- Inline bold term (adds index entry) ---
+\newcommand{\term}[1]{%
+  \textbf{\color{TechPurple}#1}\index{#1}%
+}
+
+% --- Glossary display term ---
+\newcommand{\glossterm}[1]{%
+  \textbf{\color{TechPurple}#1}%
+}
