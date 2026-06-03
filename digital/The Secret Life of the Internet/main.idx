@@ -1,81 +1,30 @@
-\indexentry{network|hyperpage}{2}
-\indexentry{device|hyperpage}{3}
-\indexentry{Internet Service Provider (ISP)|hyperpage}{3}
-\indexentry{Internet|hyperpage}{3}
-\indexentry{Network|hyperpage}{3}
-\indexentry{Device|hyperpage}{3}
-\indexentry{ISP|hyperpage}{3}
-\indexentry{Packet|hyperpage}{3}
-\indexentry{website|hyperpage}{6}
-\indexentry{server|hyperpage}{6}
-\indexentry{URL|hyperpage}{6}
-\indexentry{browser|hyperpage}{7}
-\indexentry{DNS server|hyperpage}{7}
-\indexentry{IP address|hyperpage}{7}
-\indexentry{HTML|hyperpage}{8}
-\indexentry{Website|hyperpage}{8}
-\indexentry{Browser|hyperpage}{8}
-\indexentry{URL|hyperpage}{8}
-\indexentry{DNS|hyperpage}{8}
-\indexentry{IP address|hyperpage}{8}
-\indexentry{HTML|hyperpage}{8}
-\indexentry{Wi-Fi|hyperpage}{11}
-\indexentry{router|hyperpage}{11}
-\indexentry{router|hyperpage}{11}
-\indexentry{local network|hyperpage}{11}
-\indexentry{ISP|hyperpage}{11}
-\indexentry{Ethernet cable|hyperpage}{13}
-\indexentry{Wi-Fi|hyperpage}{13}
-\indexentry{Router|hyperpage}{13}
-\indexentry{Radio waves|hyperpage}{13}
-\indexentry{Local network|hyperpage}{13}
-\indexentry{Ethernet|hyperpage}{13}
-\indexentry{server|hyperpage}{14}
-\indexentry{data centre|hyperpage}{15}
-\indexentry{request|hyperpage}{16}
-\indexentry{response|hyperpage}{16}
-\indexentry{Server|hyperpage}{16}
-\indexentry{Data centre|hyperpage}{16}
-\indexentry{Request|hyperpage}{16}
-\indexentry{Response|hyperpage}{16}
-\indexentry{Cache|hyperpage}{16}
-\indexentry{Undersea cables|hyperpage}{19}
-\indexentry{submarine cables|hyperpage}{19}
-\indexentry{cable-laying ship|hyperpage}{20}
-\indexentry{Undersea cable|hyperpage}{22}
-\indexentry{Optical fibre|hyperpage}{22}
-\indexentry{Cable-laying ship|hyperpage}{22}
-\indexentry{Amplifier|hyperpage}{22}
-\indexentry{packet|hyperpage}{25}
-\indexentry{header|hyperpage}{25}
-\indexentry{routers|hyperpage}{25}
-\indexentry{TCP/IP|hyperpage}{27}
-\indexentry{IP address|hyperpage}{27}
-\indexentry{stream|hyperpage}{27}
-\indexentry{Packet|hyperpage}{27}
-\indexentry{Header|hyperpage}{27}
-\indexentry{Router|hyperpage}{27}
-\indexentry{IP|hyperpage}{27}
-\indexentry{TCP|hyperpage}{27}
-\indexentry{Streaming|hyperpage}{27}
-\indexentry{search engine|hyperpage}{29}
-\indexentry{crawlers|hyperpage}{30}
-\indexentry{index|hyperpage}{30}
-\indexentry{ranks|hyperpage}{30}
-\indexentry{Search engine|hyperpage}{32}
-\indexentry{Crawler|hyperpage}{32}
-\indexentry{Index|hyperpage}{32}
-\indexentry{Ranking|hyperpage}{32}
-\indexentry{Query|hyperpage}{32}
-\indexentry{The cloud|hyperpage}{34}
-\indexentry{The cloud|hyperpage}{36}
-\indexentry{Cloud storage|hyperpage}{36}
-\indexentry{Backup|hyperpage}{36}
-\indexentry{Streaming|hyperpage}{36}
-\indexentry{Remote server|hyperpage}{36}
-\indexentry{password|hyperpage}{38}
-\indexentry{Password|hyperpage}{43}
-\indexentry{Privacy|hyperpage}{43}
-\indexentry{Phishing|hyperpage}{43}
-\indexentry{Screen time|hyperpage}{43}
-\indexentry{Digital citizen|hyperpage}{43}
+\beforeentry{}{dx4-6001}{}
+\indexentry{network}{4}
+\beforeentry{}{dx4-8002}{}
+\indexentry{device}{5}
+\beforeentry{}{dx4-8004}{}
+\indexentry{Internet Service Provider (ISP)}{5}
+\beforeentry{}{dx4-8007}{}
+\indexentry{Internet}{8}
+\beforeentry{}{dx4-8008}{}
+\indexentry{Network}{8}
+\beforeentry{}{dx4-8009}{}
+\indexentry{Device}{8}
+\beforeentry{}{dx4-8010}{}
+\indexentry{ISP}{8}
+\beforeentry{}{dx4-8011}{}
+\indexentry{Packet}{8}
+\beforeentry{}{dx5-11001}{}
+\indexentry{website}{12}
+\beforeentry{}{dx5-11002}{}
+\indexentry{server}{12}
+\beforeentry{}{dx5-11003}{}
+\indexentry{URL}{12}
+\beforeentry{}{dx5-12001}{}
+\indexentry{browser}{15}
+\beforeentry{}{dx5-13003}{}
+\indexentry{DNS server}{16}
+\beforeentry{}{dx5-13005}{}
+\indexentry{IP address}{16}
+\beforeentry{}{dx5-14001}{}
+\indexentry{HTML}{16}

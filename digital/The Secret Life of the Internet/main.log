@@ -1,49 +1,111 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.25)  3 JUN 2026 12:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=latex 2026.6.3)  3 JUN 2026 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./main.tex
-(main.tex
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-04-28>
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx\HCode\def\HCod
+e##1{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\l
+et\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\d
+ef\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifn
+extchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}\Requi
+rePackage{tex4ebook}\Configure{ext}{xhtml}}\makeatother\HCode xhtml,,charset=ut
+f-8,charset=utf-8,epub3,html5,uni-html4.a.b.c.\input \detokenize{main.tex} > nu
+l 2>&1
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tex4ht.sty
+version 2023-10-04-13:17
+Package: tex4ht 
+--------------------------------------
+--- Note --- for _ at preamble, use the command line option `early_'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ at preamble, use the command line option `early^'
+--------------------------------------
+\tmp:toks=\toks17
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\usepackage.4
+ht
+version 2023-07-25-12:42
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tex4ebook\tex4ebook.s
+ty
+Package: tex4ebook 2026-02-24 version v0.4d
+
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count276
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.s
+ty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\graphics-hoo
+ks.4ht
+version 2022-08-17-14:25
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics
+.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 106.
+
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\dvips.de
+f
+File: dvips.def 2025/01/21 v3.2a Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
+)) (main.tex (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\boo
+k.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\bk11.clo
 File: bk11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count276
-\c@chapter=\count277
-\c@section=\count278
-\c@subsection=\count279
-\c@subsubsection=\count280
-\c@paragraph=\count281
-\c@subparagraph=\count282
-\c@figure=\count283
-\c@table=\count284
+\c@part=\count277
+\c@chapter=\count278
+\c@section=\count279
+\c@subsection=\count280
+\c@subsubsection=\count281
+\c@paragraph=\count282
+\c@subparagraph=\count283
+\c@figure=\count284
+\c@table=\count285
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen150
-)
-(preamble.tex
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+\bibindent=\dimen152
+) (preamble.tex (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\
+fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks17
-\inpenc@posthook=\toks18
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/sourcesans\sourcesans
 pro.sty
 Package: sourcesanspro 2026/05/03 v3.1 Compatibility package for sourcesans
-
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
-))
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.s
+ty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
@@ -52,12 +114,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.te
 x
-\XKV@toks=\toks19
-\XKV@tempa@toks=\toks20
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex)
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
 )
-\XKV@depth=\count285
+\XKV@depth=\count286
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 
@@ -67,13 +127,12 @@ Package sourcesanspro Warning: This package has been replaced by `sourcesans'.
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/sourcesans\sourcesans
 .sty
 Package: sourcesans 2026/05/03 v3.1 Adobe's Source Sans typeface
- (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/ly1\ly1enc.def
 File: ly1enc.def 2022/06/11 v0.8 TeX 'n ANSI encoding (DPC/KB)
 Now handling font encoding LY1 ...
 ... processing UTF-8 mapping file for font encoding LY1
-
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\ly1enc.dfu
 File: ly1enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A0 (decimal 160)
@@ -207,37 +266,36 @@ Package: geometry 2026/03/07 v6.0 Page Geometry
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count286
-\Gm@cntv=\count287
-\c@Gm@tempcnt=\count288
-\Gm@bindingoffset=\dimen151
-\Gm@wd@mp=\dimen152
-\Gm@odd@mp=\dimen153
-\Gm@even@mp=\dimen154
-\Gm@layoutwidth=\dimen155
-\Gm@layoutheight=\dimen156
-\Gm@layouthoffset=\dimen157
-\Gm@layoutvoffset=\dimen158
-\Gm@dimlist=\toks21
+\Gm@cnth=\count287
+\Gm@cntv=\count288
+\c@Gm@tempcnt=\count289
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks23
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg
-)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\xcolor-hooks
+.4ht
+version 2020-10-17-13:53
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cf
 g
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
+Package xcolor Info: Driver file: dvips.def on input line 274.
 
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.d
-ef
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.lt
 x)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
@@ -246,27 +304,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics
-.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 106.
-)
-\Gin@req@height=\dimen159
-\Gin@req@width=\dimen160
-)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.s
 ty
 Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
 
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tikz-hooks.4
+ht
+version 2023-08-27-08:01
+*****************************
+TeX4ht info: Using dvisvgm4ht TikZ driver. Put \def \pgfsysdriver {driver-name}
+ to your document before use of TikZ if you want to another driver. Use tikz+ o
+ption if your TikZ pictures use patterns.
+)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tik
 z.sty
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.st
@@ -275,7 +324,7 @@ y
 sty
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfut
 il-common.tex
-\pgfutil@everybye=\toks22
+\pgfutil@everybye=\toks24
 \pgfutil@tempdima=\dimen161
 \pgfutil@tempdimb=\dimen162
 )
@@ -301,12 +350,12 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfke
 ys.code.tex
-\pgfkeys@pathtoks=\toks23
-\pgfkeys@temptoks=\toks24
+\pgfkeys@pathtoks=\toks25
+\pgfkeys@temptoks=\toks26
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfke
 yslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks25
+\pgfkeys@tmptoks=\toks27
 ))
 \pgf@x=\dimen163
 \pgf@y=\dimen164
@@ -320,39 +369,48 @@ yslibraryfiltered.code.tex
 \pgf@yd=\dimen172
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count289
-\c@pgf@countb=\count290
-\c@pgf@countc=\count291
-\c@pgf@countd=\count292
-\t@pgf@toka=\toks26
-\t@pgf@tokb=\toks27
-\t@pgf@tokc=\toks28
-\pgf@sys@id@count=\count293
+\c@pgf@counta=\count290
+\c@pgf@countb=\count291
+\c@pgf@countc=\count292
+\c@pgf@countd=\count293
+\t@pgf@toka=\toks28
+\t@pgf@tokb=\toks29
+\t@pgf@tokc=\toks30
+\pgf@sys@id@count=\count294
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
 .cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-dvisvgm4ht.def
+
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/webquiz\pgfsys-dvisvg
+m4ht.def
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
+sys-dvips.def
+File: pgfsys-dvips.def 2025-08-29 v3.1.11a (3.1.11a)
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-sys-pdftex.def
-File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
-sys-common-pdf.def
-File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-)))
+sys-common-postscript.def
+File: pgfsys-common-postscript.def 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@objectcount=\count295
+))
+\pgf@sys@svg@picnum=\count296
+))
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
 syssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count294
-\pgfsyssoftpath@bigbuffer@items=\count295
+\pgfsyssoftpath@smallbuffer@items=\count297
+\pgfsyssoftpath@bigbuffer@items=\count298
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf
 sysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\xcolor-hooks
+.4ht
+version 2020-10-17-13:53
+)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 ore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
@@ -364,11 +422,11 @@ l.code.tex)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpar
 ser.code.tex
 \pgfmath@dimen=\dimen173
-\pgfmath@count=\count296
+\pgfmath@count=\count299
 \pgfmath@box=\box54
-\pgfmath@toks=\toks29
-\pgfmath@stack@operand=\toks30
-\pgfmath@stack@operation=\toks31
+\pgfmath@toks=\toks31
+\pgfmath@stack@operand=\toks32
+\pgfmath@stack@operation=\toks33
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfun
 ctions.code.tex)
@@ -392,7 +450,7 @@ ctions.integerarithmetics.code.tex)
 c.code.tex)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathflo
 at.code.tex
-\c@pgfmathroundto@lastzeros=\count297
+\c@pgfmathroundto@lastzeros=\count300
 ))
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.cod
 e.tex)
@@ -432,7 +490,7 @@ File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
-\pgf@picture@serial@count=\count298
+\pgf@picture@serial@count=\count301
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 oregraphicstate.code.tex
@@ -467,8 +525,8 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 oreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen197
-\pgf@sys@shading@range@num=\count299
-\pgf@shadingcount=\count300
+\pgf@sys@shading@range@num=\count302
+\pgf@shadingcount=\count303
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfc
 oreimage.code.tex
@@ -519,8 +577,8 @@ sty
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys
 .sty
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfke
-ys.code.tex))
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+ys.code.tex)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/pgf/mat
+h\pgfmath.sty
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.co
 de.tex))
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffo
@@ -528,8 +586,8 @@ r.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen256
 \pgffor@skip=\dimen257
-\pgffor@stack=\toks32
-\pgffor@toks=\toks33
+\pgffor@stack=\toks34
+\pgffor@toks=\toks35
 ))
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
 ikz\tikz.code.tex
@@ -538,7 +596,7 @@ Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
 braryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count301
+\pgf@plot@mark@count=\count304
 \pgfplotmarksize=\dimen258
 )
 \tikz@lastx=\dimen259
@@ -553,50 +611,45 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@figbox@bg=\box61
 \tikz@tempbox=\box62
 \tikz@tempbox@bg=\box63
-\tikztreelevel=\count302
-\tikznumberofchildren=\count303
-\tikznumberofcurrentchild=\count304
-\tikz@fig@count=\count305
+\tikztreelevel=\count305
+\tikznumberofchildren=\count306
+\tikznumberofcurrentchild=\count307
+\tikz@fig@count=\count308
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodu
 lematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count306
-\pgfmatrixcurrentcolumn=\count307
-\pgf@matrix@numberofcolumns=\count308
+\pgfmatrixcurrentrow=\count309
+\pgfmatrixcurrentcolumn=\count310
+\pgf@matrix@numberofcolumns=\count311
 )
-\tikz@expandcount=\count309
+\tikz@expandcount=\count312
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
 ikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)))
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+))) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.st
+y
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks34
-\verbatim@line=\toks35
+\every@verbatim=\toks36
+\verbatim@line=\toks37
 \verbatim@in@stream=\read3
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces
 .sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks36
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count310
+\@envbody=\toks38
 )
 \tcb@titlebox=\box64
 \tcb@upperbox=\box65
 \tcb@lowerbox=\box66
 \tcb@phantombox=\box67
-\c@tcbbreakpart=\count311
-\c@tcblayer=\count312
-\c@tcolorbox@number=\count313
+\c@tcbbreakpart=\count313
+\c@tcblayer=\count314
+\c@tcolorbox@number=\count315
 \l__tcobox_tmpa_box=\box68
 \l__tcobox_tmpa_dim=\dimen267
 \tcb@temp=\box69
@@ -612,6 +665,10 @@ Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
 ge.sty
 Package: tikzfill.image 2026/04/23 v1.2.0 Image filling library for TikZ
 
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tikz-hooks.4
+ht
+version 2023-08-27-08:01
+)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryf
 ill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2026/04/23 v1.2.0 Image filling library
@@ -629,17 +686,20 @@ Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr
 .sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-))
-Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
 \tcb@testbox=\box74
 \tcb@totalupperbox=\box75
 \tcb@totallowerbox=\box76
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tikz-hooks.4
+ht
+version 2023-08-27-08:01
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
 braryarrows.meta.code.tex
@@ -732,7 +792,7 @@ ledecorations.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen276
 \pgfdecoratedinputsegmentremainingdistance=\dimen277
 \pgf@decorate@distancetomove=\dimen278
-\pgf@decorate@repeatstate=\count314
+\pgf@decorate@repeatstate=\count316
 \pgfdecorationsegmentamplitude=\dimen279
 \pgfdecorationsegmentlength=\dimen280
 )
@@ -755,6 +815,182 @@ File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
 braryfadings.code.tex
 File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.31 ...g{east}{\pgfuseshading{pgf@lib@fade@east}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.31 ...g{east}{\pgfuseshading{pgf@lib@fade@east}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.32 ...g{west}{\pgfuseshading{pgf@lib@fade@west}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.32 ...g{west}{\pgfuseshading{pgf@lib@fade@west}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.33 ...north}{\pgfuseshading{pgf@lib@fade@north}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.33 ...north}{\pgfuseshading{pgf@lib@fade@north}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.34 ...south}{\pgfuseshading{pgf@lib@fade@south}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.34 ...south}{\pgfuseshading{pgf@lib@fade@south}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.42 ...}{\pgfuseshading{tikz@lib@fade@circle@10}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.42 ...}{\pgfuseshading{tikz@lib@fade@circle@10}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.47 ...}{\pgfuseshading{tikz@lib@fade@circle@15}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.47 ...}{\pgfuseshading{tikz@lib@fade@circle@15}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.52 ...}{\pgfuseshading{tikz@lib@fade@circle@20}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.52 ...}{\pgfuseshading{tikz@lib@fade@circle@20}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\a:tikzpicture ->\Picture 
+                          *{} 
+l.57 ...t}{\pgfuseshading{tikz@lib@fade@fuzzy@15}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\b:tikzpicture ->\EndPicture 
+                             
+l.57 ...t}{\pgfuseshading{tikz@lib@fade@fuzzy@15}}
+                                                  %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 )))
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
 ikz/libraries\tikzlibraryfit.code.tex
@@ -766,24 +1002,43 @@ File: tikzlibrarybackgrounds.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@layerbox@background=\box98
 \pgf@layerboxsaved@background=\box99
 )
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\fontawesome5
+-hooks.4ht
+version 2021-05-06-14:39
+)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawes
 ome5.sty
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\expl3-hooks.
+4ht
+version 2020-10-17-13:53
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2026-04-28 L3 programming layer (loader) 
 
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-p
-dftex.def
-File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count315
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-d
+vips.def
+File: l3backend-dvips.def 2026-02-18 L3 backend support: dvips
+\l__pdfannot_backend_content_box=\box100
+\l__pdfannot_backend_model_box=\box101
+\g__pdfannot_backend_int=\count317
+\g__pdfannot_backend_link_int=\count318
+\g__pdfannot_backend_link_sf_int=\count319
 ))
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l
 3keys2e.sty
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\expl3-hooks.
+4ht
+version 2020-10-17-13:53
+)
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpa
 rse.sty
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\expl3-hooks.
+4ht
+version 2020-10-17-13:53
+)
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawes
@@ -796,14 +1051,6 @@ ome5-mapping.def)))
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.s
-ty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.s
-ty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-))
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
 Package: zref-abspage 2026-03-07 v2.37 Module abspage for zref (HO)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
@@ -819,20 +1066,23 @@ Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.s
 ty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+
+Package auxhook Warning: Cannot patch \document,
+(auxhook)                using \AtBeginDocument instead.
+
 )
 Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count316
+\c@abspage=\count320
 Package zref Info: New property: abspage on input line 67.
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.s
@@ -840,7 +1090,7 @@ ty
 Package: needspace 2025/03/13 v1.3e reserve vertical space
 )
 \mdf@templength=\skip51
-\c@mdf@globalstyle@cnt=\count317
+\c@mdf@globalstyle@cnt=\count321
 \mdf@skipabove@length=\skip52
 \mdf@skipbelow@length=\skip53
 \mdf@leftmargin@length=\skip54
@@ -885,11 +1135,11 @@ Package: needspace 2025/03/13 v1.3e reserve vertical space
 df
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box100
-\mdf@footnotebox=\box101
-\mdf@splitbox@one=\box102
-\mdf@splitbox@two=\box103
-\mdf@splitbox@save=\box104
+\mdf@frametitlebox=\box102
+\mdf@footnotebox=\box103
+\mdf@splitbox@one=\box104
+\mdf@splitbox@two=\box105
+\mdf@splitbox@save=\box106
 \mdfsplitboxwidth=\skip91
 \mdfsplitboxtotalwidth=\skip92
 \mdfsplitboxheight=\skip93
@@ -917,19 +1167,18 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip115
 \mdfsubtitleheight=\skip116
 \mdfsubsubtitleheight=\skip117
-\c@mdfcountframes=\count318
+\c@mdfcountframes=\count322
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count319
-\c@mdf@env@i=\count320
-\c@mdf@env@ii=\count321
-\c@mdf@zref@counter=\count322
+\mdf@envdepth=\count323
+\c@mdf@env@i=\count324
+\c@mdf@env@ii=\count325
+\c@mdf@zref@counter=\count326
 Package zref Info: New property: mdf@pagevalue on input line 895.
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/parskip\parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
@@ -937,32 +1186,30 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\enitkv@toks@=\toks37
 \labelindent=\skip118
 \enit@outerparindent=\dimen281
-\enit@toks=\toks38
-\enit@inbox=\box105
-\enit@count@id=\count323
-\enitdp@description=\count324
+\enit@toks=\toks39
+\enit@inbox=\box107
+\enit@count@id=\count327
+\enitdp@description=\count328
 ) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen282
-\ar@mcellbox=\box106
+\ar@mcellbox=\box108
 \extrarowheight=\dimen283
-\NC@list=\toks39
+\NC@list=\toks40
 \extratabsurround=\skip119
 \backup@length=\skip120
-\ar@cellbox=\box107
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+\ar@cellbox=\box109
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen284
 \TX@old@table=\dimen285
 \TX@old@col=\dimen286
 \TX@target=\dimen287
 \TX@delta=\dimen288
-\TX@cols=\count325
-\TX@ftn=\toks40
+\TX@cols=\count329
+\TX@ftn=\toks41
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
@@ -984,18 +1231,18 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.s
 ty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-\MT@toks=\toks41
-\MT@tempbox=\box108
-\MT@count=\count326
+\MT@toks=\toks42
+\MT@tempbox=\box110
+\MT@count=\count330
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
 LaTeX Info: Redefining \leftprotrusion on input line 1085.
-\MT@prot@toks=\toks42
+\MT@prot@toks=\toks43
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen289
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count327
+\MT@listname@count=\count331
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-p
 dftex.def
@@ -1012,6 +1259,10 @@ fg
 File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\fancyhdr-hoo
+ks.4ht
+version 2020-10-17-13:53
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
@@ -1030,7 +1281,11 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip147
 \f@nch@widthC=\skip148
 \f@nch@widthR=\skip149
-\@temptokenb=\toks43
+\@temptokenb=\toks44
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\hyperref-hoo
+ks.4ht
+version 2023-09-17-08:01
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
@@ -1038,11 +1293,10 @@ Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape
 .sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.st
+y
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -1052,7 +1306,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 itlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count328
+\c@section@level=\count332
 )
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc
 .sty
@@ -1060,9 +1314,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen290
-\Hy@linkcounter=\count329
-\Hy@pagecounter=\count330
-
+\Hy@linkcounter=\count333
+\Hy@pagecounter=\count334
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -1071,12 +1324,13 @@ Now handling font encoding PD1 ...
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count331
- (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+\Hy@SavedSpaceFactor=\count335
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4070.
 Package hyperref Info: Hyper figures OFF on input line 4199.
 Package hyperref Info: Link nesting OFF on input line 4204.
 Package hyperref Info: Hyper index ON on input line 4207.
@@ -1084,14 +1338,13 @@ Package hyperref Info: Plain pages OFF on input line 4214.
 Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4466.
-\c@Hy@tempcnt=\count332
+\c@Hy@tempcnt=\count336
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4805.
 \XeTeXLinkMargin=\dimen291
-
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -1100,43 +1353,28 @@ lc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count333
+\Fld@menulength=\count337
 \Field@Width=\dimen292
 \Fld@charsize=\dimen293
+\Field@toks=\toks45
 Package hyperref Info: Hyper figures OFF on input line 6091.
 Package hyperref Info: Link nesting OFF on input line 6096.
 Package hyperref Info: Hyper index ON on input line 6099.
 Package hyperref Info: backreferencing OFF on input line 6106.
-Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring ON on input line 6109.
 Package hyperref Info: Link coloring with OCG OFF on input line 6116.
 Package hyperref Info: PDF/A mode OFF on input line 6121.
-\Hy@abspage=\count334
-\c@Item=\count335
-\c@Hfootnote=\count336
-)
-Package hyperref Info: Driver (autodetected): hpdftex.
+\Hy@abspage=\count338
 
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
-\HyAnn@Count=\count337
-\Fld@listcount=\count338
-\c@bookmark@seq@number=\count339
+Package hyperref Message: Stopped early.
 
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunf
-ilecheck.sty
-Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniqu
-ecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
-)
-\Hy@SectionHShift=\skip150
+Package hyperref Info: Driver: htex4ht.
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\htex4ht.def
+File: htex4ht.def 2026-04-24 v7.01q Hyperref driver for TeX4ht
+Package hyperref Info: tex4ht is already loaded.
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 74.
-
 
 Package hyperref Warning: Option `bookmarks' has already been used,
 (hyperref)                setting the option has no effect on input line 74.
@@ -1146,31 +1384,660 @@ Package hyperref Info: Option `bookmarksopen' set `true' on input line 74.
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/accsupp\accsupp.sty
 Package: accsupp 2019/12/05 v0.6 Accessibility support by marked content (HO)
 
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/accsupp\accsupp-pdfte
-x.def
-File: accsupp-pdftex.def 2019/12/05 v0.6 accsupp driver for pdfTeX (HO)
-))
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/accsupp\accsupp-dvips
+.def
+File: accsupp-dvips.def 2019/12/05 v0.6 accsupp driver for dvips (HO)
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
 Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 )
 \@indexfile=\write4
 \openout4 = `main.idx'.
 
-
 Writing index file main.idx
 
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\titlesec-hoo
+ks.4ht
+version 2023-04-03-14:42
+)
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box109
-\beforetitleunit=\skip151
-\aftertitleunit=\skip152
+\ttl@box=\box111
+\beforetitleunit=\skip150
+\aftertitleunit=\skip151
 \ttl@plus=\dimen294
 \ttl@minus=\dimen295
-\ttl@toksa=\toks44
+\ttl@toksa=\toks46
 \titlewidth=\dimen296
 \titlewidthlast=\dimen297
 \titlewidthfirst=\dimen298
-)) (assets/characters.tex) (main.aux)
+)) (assets/characters.tex
+\charheight=\skip152
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tex4ht.4ht
+version 2022-07-05-14:37
+--------------------------------------
+--- Note --- for additional information, use the command line option `info'
+--------------------------------------
+::::::::::::::::::::::::::::::::::::::::::
+ TeX4ht info is available in the log file 
+::::::::::::::::::::::::::::::::::::::::::
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tex4ht.sty
+version 2023-10-04-13:17
+l.870 --- TeX4ht warning --- nonprimitive \everypar ---
+--- needs --- tex4ht main ---
+\tmp:cnt=\count339
+\openout15 = `main.tmp'.
+
+(main.tmp)
+\tmp:dim=\skip153
+(main.xref)
+\:refout=\write5
+\openout5 = `main.xref'.
+
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+--------------------------------------
+--- Note --- to remove the <?xml version=...?> processing instruction use the c
+ommand line option `no-VERSION'
+--------------------------------------
+--------------------------------------
+--- Note --- to remove the DOCTYPE declaration use the command line option `no-
+DOCTYPE'
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)
+--------------------------------------
+--- Note --- for marking of the base font, use the command line option `fonts+'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for non active _, use the command line option `no_'
+--------------------------------------
+--------------------------------------
+--- Note --- for _ of catcode 13, use the command line option `_13'
+--------------------------------------
+--------------------------------------
+--- Note --- for non active ^, use the command line option `no^'
+--------------------------------------
+--------------------------------------
+--- Note --- for ^ of catcode 13, use the command line option `^13'
+--------------------------------------
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+--------------------------------------
+--- Note --- to ignore CSS font decoration, use the `NoFonts' command line opti
+on
+--------------------------------------
+--------------------------------------
+--- Note --- for jpg bitmaps of pictures, use the `jpg' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for gif bitmaps of pictures, use the `gif' command line option. (C
+haracter bitmaps are controled only by `g' records of tex4ht.env and `-g' switc
+hes of tex4ht.c) 
+--------------------------------------
+--------------------------------------
+--- Note --- for content and toc in 2 frames, use the command line option `fram
+es'
+--------------------------------------
+--------------------------------------
+--- Note --- for content, toc, and footnotes in 3 frames, use the command line 
+option `frames-fn'
+--------------------------------------
+--------------------------------------
+--- Note --- for file extension name xht, use the command line option `xht'
+--------------------------------------
+TeX4ht package options: xhtml,charset=utf-8,epub3,html5,uni-html4,html
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- to ignore CSS code, use the command line option `-css
+--------------------------------------
+--------------------------------------
+--- Note --- for inline CSS code, use the command line option `css-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for pop ups on mouse over, use the command line option `mouseover'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for addressing images in a subdirectory, use the command line opti
+on `imgdir:.../'
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+--------------------------------------
+--- Note --- To print a timestamp, use the command line option timestamp
+--------------------------------------
+--------------------------------------
+--- Note --- We use a default CSS style. Use the `nostyle' option if you want t
+o use custom a CSS design
+--------------------------------------
+)
+\:tokwrite=\toks47
+\:tokpage=\toks48
+--------------------------------------
+--- Note --- for back links to toc, use the command line option `sections+'
+--------------------------------------
+--------------------------------------
+--- Note --- for linear crosslinks of pages, use the command line option `next'
+
+--------------------------------------
+\openout15 = `main.4ct'.
+
+\:tocout=\write6
+\openout6 = `main.4tc'.
+
+(main.4tc) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\h
+tml4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\latex.4ht
+version 2023-10-02-13:11
+LaTeX Info: Redefining \_ on input line 179.
+LaTeX Info: Redefining \begin on input line 597.
+LaTeX Info: Redefining \end on input line 645.
+LaTeX Info: Redefining \, on input line 807.
+LaTeX Info: Redefining \; on input line 808.
+LaTeX Info: Redefining \! on input line 809.
+LaTeX Info: Redefining \: on input line 810.
+LaTeX Info: Redefining \> on input line 811.
+--------------------------------------
+--- Note --- for links into captions, instead of float heads, use the command l
+ine option `refcaption'
+--------------------------------------
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+--------------------------------------
+--- Note --- For mini tocs immediately aftter the header use the command line o
+ption `minitoc<'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements with valued data, use the command lin
+e option `enumerate+'
+--------------------------------------
+--------------------------------------
+--- Note --- for enumerated list elements li's with value attributes, use the c
+ommand line option `enumerate-'
+--------------------------------------
+--------------------------------------
+--- Note --- for CSS2 code, use the command line option `css2'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial tabular, use the command line option `pic-tabular'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap fbox'es, use the command line option `pic-fbox'
+--------------------------------------
+--------------------------------------
+--- Note --- for bitmap framebox'es, use the command line option `pic-framebox'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for inline footnotes use command line option `fn-in'
+--------------------------------------
+--------------------------------------
+--- Note --- for tracing of latex font commands, use the command line option `f
+onts'
+--------------------------------------
+--------------------------------------
+--- Note --- for width specifications of tabular p entries, use the `p-width' c
+ommand line option or a configuration similar to \Configure{HColWidth}{\HCode{ 
+style="width:\HColWidth"}}
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+--------------------------------------
+--- Note --- for pictorial eqnarray, use the command line option `pic-eqnarray'
+
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ environments, use the command line option `pic
+-m' (not recommended!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial $...$ and $$...$$ environments with latex alt, use t
+he command line option `pic-m+' (not safe!!)
+--------------------------------------
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\fontmath.4ht
+version 2022-10-25-13:59
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tex4ebook\tex4ebook.4
+ht
+\opf:htmlid=\count340
+\navpoint=\count341
+
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/tex4ebook\tex4ebook-e
+pub3.4ht
+\:toccount=\count342
+\footnotebox=\box112
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\graphicx.4ht
+version 2022-01-12-13:53
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\graphics.4ht
+version 2022-03-20-14:29
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+--------------------------------------
+--- Note --- if included graphics are of degraded quality, try the command line
+ options `graphics-num' or `graphics-'. The `num' should provide the density of
+ pixels in the bitmaps (e.g., 110). 
+--------------------------------------
+--------------------------------------
+--- Note --- for setting image dimensions, try the option `Gin-dim'; to use per
+cents instead of units, use `Gin-perecent'; for key dimensions when bounding bo
+x is unavailable try `Gin-dim+'; neither is recommended
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\dvips.4ht
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\book.4ht
+version 2023-04-10-13:46
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+--------------------------------------
+--- Note --- for automatic sectioning pagination, use the command line option `
+1', `2', `3', '4', '5', '6', or '7'
+--------------------------------------
+--------------------------------------
+--- Note --- for files named derived from section titles, use the command line 
+option `sec-filename'
+--------------------------------------
+--------------------------------------
+--- Note --- for i-columns index, use the command line option `index=i' (e.g., 
+index=2)
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\inputenc.4ht
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\geometry.4ht
+version 2016-07-01-08:55
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\xcolor.4h
+t
+version 2022-04-17-09:34
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\color.4ht
+version 2022-02-01-14:27
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\color.4ht
+version 2022-02-01-14:27
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tcolorbox.4h
+t
+version 2023-02-12-14:24
+\c@:tcbcolcount=\count343
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\pgf.4ht
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\verbatim.4ht
+version 2021-07-04-09:13
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\fontawesome5
+.4ht
+version 2021-05-06-14:39
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\mdframed.4ht
+version 2022-12-26-13:00
+\mdf:env:cnt=\count344
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\enumitem.4ht
+version 2022-05-01-08:25
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\array.4ht
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+--------------------------------------
+--- Note --- for pictorial array, use the command line option `pic-array'
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\tabularx.4ht
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\microtype.4h
+t
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\hyperref.4ht
+version 2022-07-01-14:27
+LaTeX Info: Redefining \autoref on input line 88.
+\Hy@SectionHShift=\skip154
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\nameref.4
+ht
+version 2022-12-30-15:46
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\pd1enc.4h
+t
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\url.4ht
+version 2023-02-19-10:11
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+--------------------------------------
+--- Note --- for URL encoding within href use the command line option `url-enc'
+
+--------------------------------------
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\makeidx.4
+ht
+version 2009-05-21-09:32
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+))
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\titlesec.4ht
+version 2021-03-02-13:43
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4.4ht
+version 2023-10-13-14:16
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\unicode.4h
+t
+version 2023-04-02-08:01
+)
+(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html4-math.4
+ht
+version 2022-10-25-13:59
+) (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/generic/tex4ht\html5.4ht
+version 2023-10-09-13:31
+)) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
@@ -1190,7 +2057,6 @@ LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 9.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 9
 .
-
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/ly1\ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
@@ -1199,11 +2065,10 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
-
 *geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
+*geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
+* driver: dvips
 * paper: custom
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -1214,8 +2079,8 @@ LaTeX Font Info:    ... okay on input line 9.
 * \paperheight=794.96999pt
 * \textwidth=505.89pt
 * \textheight=672.11122pt
-* \oddsidemargin=-18.06749pt
-* \evensidemargin=-18.06749pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
 * \topmargin=-39.10123pt
 * \headheight=14.0pt
 * \headsep=19.8738pt
@@ -1234,236 +2099,233 @@ LaTeX Font Info:    ... okay on input line 9.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
-mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count340
-\scratchdimen=\dimen299
-\scratchbox=\box110
-\nofMPsegments=\count341
-\nofMParguments=\count342
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count343
-\MPscratchDim=\dimen300
-\MPnumerator=\count344
-\makeMPintoPDFobject=\count345
-\everyMPtoPDFconversion=\toks46
-)
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
--base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys
-.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
 LaTeX Info: Redefining \microtypecontext on input line 9.
-Package microtype Info: Applying patch `item' on input line 9.
-Package microtype Info: Applying patch `toc' on input line 9.
-Package microtype Info: Applying patch `eqnum' on input line 9.
-Package microtype Info: Applying patch `footnote' on input line 9.
-Package microtype Info: Applying patch `verbatim' on input line 9.
+Package microtype Info: Not applying patch `item' (for tex4ht) on input line 9.
+
+Package microtype Info: Not applying patch `toc' (for tex4ht) on input line 9.
+Package microtype Info: Not applying patch `eqnum' (for tex4ht) on input line 9
+.
+Package microtype Info: Not applying patch `footnote' (for tex4ht) on input lin
+e 9.
+Package microtype Info: Not applying patch `verbatim' (for tex4ht) on input lin
+e 9.
 LaTeX Info: Redefining \microtypesetup on input line 9.
-Package microtype Info: Generating PDF output.
-Package microtype Info: Character protrusion enabled (level 2).
-Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Generating DVI output.
+Package microtype Info: No character protrusion.
 Package microtype Info: No font expansion.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
-(C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
-)
 Package hyperref Info: Link coloring ON on input line 9.
-(main.out) (main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+--- file main.css ---
+[1
 
-<assets/cover.png, id=89, 1153.30875pt x 1374.13374pt>
-File: assets/cover.png Graphic file (type png)
-<use assets/cover.png>
-Package pdftex.def Info: assets/cover.png  used on input line 23.
-(pdftex.def)             Requested size: 614.31279pt x 794.9643pt.
- [1
+] [2
 
+] [1] [2
 
+] [3]
+l. 21 Writing main.idv[1] (main0x.svg)
 
- <./assets/cover.png (PNG copy)>] (copyright.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 39.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 39.
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+! LaTeX Error: File `"assets/cover.xbb"' not found.
 
-[2{C:/Users/Joejazo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
-[3
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...dth,height=\paperheight]{assets/cover.png}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
-] (main.toc)
-\tf@toc=\write6
-\openout6 = `main.toc'.
+! LaTeX Error: Cannot determine size of graphic in "assets/cover.xbb" (no Bound
+ingBox).
 
- [4
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 ...dth,height=\paperheight]{assets/cover.png}
+                                                  %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-] (chapters/01_what_is_the_internet.tex
+File: assets/cover.png Graphic file (type bmp)
+<assets/cover.png> [1] (copyright.tex [2]) [3
+
+]
+--- file mainli1.xhtml ---
+[4
+
+] [5
+
+]
+l.38 --- TeX4ht warning --- File `"assets/characters/Dot.xbb"' not found ---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Dot.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Dot.png ---
+l.38 --- TeX4ht warning --- File `"assets/characters/Bee Browser.xbb"' not foun
+d ---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Bee Browser.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Bee Browser.png ---
+l.38 --- TeX4ht warning --- File `"assets/characters/Willa Wifi.xbb"' not found
+ ---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Willa Wifi.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Willa Wifi.png ---
+l.38 --- TeX4ht warning --- File `"assets/characters/Rory Router.xbb"' not foun
+d ---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Rory Router.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Rory Router.png ---
+l.38 --- TeX4ht warning --- File `"assets/characters/Sunny Server.xbb"' not fou
+nd ---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Sunny Server.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Sunny Server.png ---
+l.38 --- TeX4ht warning --- File `"assets/characters/Captain Cable.xbb"' not fo
+und ---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Captain Cable.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Captain Cable.png ---
+l.38 --- TeX4ht warning --- File `"assets/characters/Scout Search.xbb"' not fou
+nd ---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Scout Search.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Scout Search.png ---
+l.38 --- TeX4ht warning --- File `"assets/characters/Cloud Pal.xbb"' not found 
+---
+l.38 --- TeX4ht warning --- Cannot determine size of graphic in "assets/charact
+ers/Cloud Pal.xbb" (no BoundingBox) ---
+l. 38 --- needs --- assets/characters/Cloud Pal.png ---
+[6
+
+] [7
+
+] [8
+
+]
+--- file mainli2.xhtml ---
+(main.4ct) [9
+
+] [10
+
+] (chapters/01_what_is_the_internet.tex [1] [2
+
+]
 Chapter 1.
+--- file mainch1.xhtml ---
+l. 43 Writing main.idv[2] (main1x.svg)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
 nput line 43.
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawe
-somefree2.fd) [1
-
+somefree2.fd)
+l. 49 Writing main.idv[3] (main2x.svg)
+[3
 
 ]
+---------------------------------------------------------
+l.52 --- TeX4ht warning --- If not done so, the index is to be processed by 
+  tex '\def\filename{{main}{idx}{4dx}{ind}} \input  idxmake.4ht' 
+  makeindex -o main.ind main.4dx 
+instead of 
+  makeindex -o main.ind main.idx 
+On some platforms, the quotation marks ' should be 
+ replaced by double quotation marks " or eliminated. 
+---------------------------------------------------------  ---
+l. 60 Writing main.idv[4] (main3x.svg)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree3 on i
 nput line 60.
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawe
-somefree3.fd) [2{C:/Users/Joejazo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/fontawesome5/fa5free2.enc}{C:/Users/Joejazo/AppData/Local/Programs/MiKTeX/font
-s/enc/dvips/fontawesome5/fa5free3.enc}]
-Overfull \hbox (5.5427pt too wide) in paragraph at lines 113--114
- [][] 
- []
+somefree3.fd)
+l. 61 Writing main.idv[5] (main4x.svg)
+l.63 --- TeX4ht warning --- missing \Configure{HColor}{SkyBlue!60}{...} (in LaT
+eX: \\color@SkyBlue!60 ) ---
+l. 69 Writing main.idv[6] (main5x.svg)
+l. 80 Writing main.idv[7] (main6x.svg)
+[4] [5] [6
 
+]
+l. 104 Writing main.idv[8] (main7x.svg)
+[7
+
+]
+l. 120 Writing main.idv[9] (main8x.svg)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on i
 nput line 120.
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawe
 somefree0.fd)
+l. 127 Writing main.idv[10] (main9x.svg)
+l. 133 Writing main.idv[11] (main10x.svg)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
 nput line 133.
 
 (C:\Users\Joejazo\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontawe
-somefree1.fd) [3{C:/Users/Joejazo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/fontawesome5/fa5free0.enc}{C:/Users/Joejazo/AppData/Local/Programs/MiKTeX/font
-s/enc/dvips/fontawesome5/fa5free1.enc}]) (chapters/02_websites_and_browsers.tex
-[4]
+somefree1.fd)
+l. 146 Writing main.idv[12] (main11x.svg)
+l. 152 Writing main.idv[13] (main12x.svg)
+[8
+
+]
+l. 155 Writing main.idv[14] (main13x.svg)
+) (chapters/02_websites_and_browsers.tex [9] [10
+
+]
 Chapter 2.
-[5
+--- file mainch2.xhtml ---
+l. 33 Writing main.idv[15] (main14x.svg)
+l. 38 Writing main.idv[16] (main15x.svg)
+l. 46 Writing main.idv[17] (main16x.svg)
+l. 47 Writing main.idv[18] (main17x.svg)
+[11
 
-] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
-[]\T1/cmr/m/n/10.95 Bee Browser is like a taxi driver. You tell the taxi driver
- the ad-dress ^^V say, 
- []
+] [12] [13
 
-[7]
+]
+l. 73 Writing main.idv[19] (main18x.svg)
+[14
+
+]
+l. 98 Writing main.idv[20] (main19x.svg)
+l. 104 Writing main.idv[21] (main20x.svg)
+[15
+
+]
+l. 156 Writing main.idv[22] (main21x.svg)
+[16]
+l. 164 Writing main.idv[23] (main22x.svg)
+l. 169 Writing main.idv[24] (main23x.svg)
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 174.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 174.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 174.
-) (chapters/03_wifi_and_routers.tex [8] [9]
-Chapter 3.
-[10
+! Interruption.
+<to be read again> 
+                   \egroup 
+l.181     \end{tabular}
+                       
+? 
+! Emergency stop.
+<to be read again> 
+                   \egroup 
+l.181     \end{tabular}
+                       
+End of file on the terminal!
 
-] [11] [12]) (chapters/04_servers_and_data_centers.tex [13]
-Chapter 4.
-[14
-
-] [15] [16]) (chapters/05_undersea_cables.tex [17]
-Chapter 5.
-[18
-
-] [19] [20]
-Underfull \vbox (badness 6141) has occurred while \output is active []
-
- [21])
-(chapters/06_how_messages_and_videos_travel.tex [22] [23]
-Chapter 6.
-[24
-
-] [25] [26] [27]) (chapters/07_search_engines.tex [28]
-Chapter 7.
-[29
-
-] [30] [31]) (chapters/08_the_cloud.tex [32]
-Chapter 8.
-[33
-
-] [34] [35]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [36])
-(chapters/09_stay_safe_and_curious.tex [37]
-Chapter 9.
-[38
-
-] [39] [40] [41]
-Underfull \vbox (badness 2401) has occurred while \output is active []
-
- [42])
-[43] (glossary.tex [44
-
-
-] [45
-
-] [46]) (quiz.tex [47] [48
-
-] [49] [50])
-(teacher_guide.tex [51] [52
-
-] [53] [54] [55] [56]) [57] (main.ind [58] [59
-
-]
-[60
-
-]) (main.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-04-28>
- ***********
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B09297CB73349C99B893C571CD8BF02C;2129.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 35372 strings out of 467683
- 745129 string characters out of 5413753
- 1226400 words of memory out of 5000000
- 63618 multiletter control sequences out of 15000+600000
- 650375 words of font info for 82 fonts, out of 8000000 for 9000
+ 38618 strings out of 467684
+ 791615 string characters out of 5413780
+ 1402186 words of memory out of 5000000
+ 66768 multiletter control sequences out of 15000+600000
+ 644273 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 103i,12n,111p,1195b,1195s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ec
-ti1440.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
-pi600\ecbi1200.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx0800.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecbi1095.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts
-/pk/ljfour/jknappen/ec/dpi600\ectt1095.pk> <C:\Users\Joejazo\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\Joejazo\AppData\Lo
-cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Joejazo\Ap
-pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\Jo
-ejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1095.pk> <C:\
-Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2074.
-pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\e
-cbx1728.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/
-dpi600\ecbx1095.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jkna
-ppen/ec/dpi600\ecti1000.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\font
-s/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\Joejazo\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\Joejazo\AppData\L
-ocal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\Joejazo\A
-ppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\J
-oejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:
-\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000
-.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecti1200.pk> <C:\Users\Joejazo\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1440.pk><C:/Users/Joejazo/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/Joejazo/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on main.pdf (64 pages, 2553225 bytes).
-PDF statistics:
- 1518 PDF objects out of 1728 (max. 8388607)
- 198 named destinations out of 1000 (max. 500000)
- 17130 words of extra memory for PDF output out of 17280 (max. 10000000)
-
+ 108i,9n,131p,1742b,1288s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on main.dvi (31 pages, 116128 bytes).
