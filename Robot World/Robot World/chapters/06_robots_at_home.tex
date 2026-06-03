@@ -1,0 +1,169 @@
+% ============================================================
+%  Chapter 6 — Robots at Home
+%  Robot World: Meet the Machines That Help Us
+% ============================================================
+
+\chapter{Robots at Home}
+
+\chapteropening{%
+  You might already live with a robot and not even realise it.
+  From vacuum cleaners to lawn mowers, robots are quietly helping
+  families every day.
+}
+\chapterbadge{Echo's Domain: The Smart Home}
+
+% --- Introduction ---
+\section*{Robots Under Your Roof}
+
+Factory robots are big and expensive. Home robots are small, affordable,
+and designed to be safe around children and pets.
+
+\character{Echo}{I listen for your voice and control the smart lights,
+  play music, and even remind you about homework. I am not just a
+  speaker \textemdash{} I am a helper!}
+
+\sectionrule
+
+% --- Types of home robots ---
+\section*{Types of Home Robots}
+
+\subsection*{Robot Vacuums}
+
+These disc-shaped \term{robot vacuums} zip around your floors, sucking up dust and crumbs.
+They use \term{bump sensors}, \term{cliff sensors} (so they do not fall downstairs),
+and sometimes \term{lidar} to map your rooms.
+
+\begin{funfact}
+  The first Roomba was sold in 2002. Since then, over 40 million
+  robot vacuums have been sold worldwide.
+\end{funfact}
+
+\subsection*{\term{Robot Lawn Mowers}}
+
+Like a vacuum for your garden. They follow a boundary wire buried in the
+ground and mow a little bit every day, keeping the grass perfectly short
+without you lifting a finger.
+
+\subsection*{\term{Robot Window Cleaners}}
+
+These cling to glass using suction and crawl across windows, spraying and
+wiping as they go \textemdash{} perfect for hard-to-reach places.
+
+\subsection*{\term{Smart Speakers} and Assistants}
+
+Devices like Alexa, Google Home, and Siri are not physical robots, but
+they use the same sense\,--\,think\,--\,act pattern: microphone (sense),
+AI brain (think), speaker output and smart-home commands (act).
+
+\subsection*{\term{Companion Robots}}
+
+Some robots are built purely to be friends. They chat, play games,
+and even recognise your face and mood.
+
+\begin{picturethis}
+  Imagine a pet that never needs feeding, never makes a mess, and
+  always wants to play. Companion robots are a bit like that \textemdash{}
+  though real pets still give the best cuddles!
+\end{picturethis}
+
+\sectionrule
+
+% --- How a robot vacuum works ---
+\section*{Inside a Robot Vacuum}
+
+\begin{quickmap}
+  \textbf{How a robot vacuum cleans a room:}
+  \begin{enumerate}
+    \item Leaves its \term{charging dock}.
+    \item Spins its lidar sensor to build a map of the room.
+    \item Plans an efficient zig-zag path.
+    \item Drives forward, brushing and sucking dirt.
+    \item If it senses a chair leg or wall, it adjusts course.
+    \item When battery runs low, returns to the dock to recharge.
+    \item Resumes cleaning where it left off.
+  \end{enumerate}
+\end{quickmap}
+
+\sectionrule
+
+% --- Diagram ---
+\begin{diagram}[A robot vacuum's cleaning path: dock, map, clean, return.]
+  \begin{tikzpicture}[>=Stealth]
+    % Room outline
+    \draw[MetalGray,line width=1.5pt,rounded corners=2pt] (0,0) rectangle (8,5);
+    \node[font=\scriptsize\itshape] at (4,5.3) {Room};
+    % Furniture obstacles
+    \draw[fill=MetalGray!20,draw=MetalGray] (1.5,3.5) rectangle (2.5,4.5);
+    \node[font=\tiny] at (2,4) {Table};
+    \draw[fill=MetalGray!20,draw=MetalGray] (5.5,1) rectangle (7,2);
+    \node[font=\tiny] at (6.25,1.5) {Sofa};
+    % Charging dock
+    \draw[fill=SunYellow!40,draw=SunYellow!70!black,rounded corners=2pt] (0.2,0.2) rectangle (1.2,0.8);
+    \node[font=\tiny\bfseries] at (0.7,0.5) {Dock};
+    % Zig-zag path
+    \draw[RoboGreen,line width=1.2pt,->]
+      (0.7,0.8) -- (0.7,2.5) -- (3.5,2.5) -- (3.5,0.5) -- (5,0.5)
+      -- (5,3) -- (7.5,3) -- (7.5,4.5) -- (3,4.5) -- (3,3.2);
+    % Robot position
+    \fill[RoboGreen!80!black] (3,3.2) circle (0.2);
+    \node[font=\tiny\bfseries,right] at (3.3,3.2) {Robot};
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+% --- Experiment ---
+\begin{experiment}
+  \textbf{Map your room like a robot vacuum.}
+  \begin{enumerate}
+    \item Blindfold yourself (or close your eyes).
+    \item Starting from the door, walk slowly with arms outstretched.
+    \item Every time you touch something, say what it is and mark it on paper.
+    \item After five minutes, open your eyes and compare your mental map
+      to the real room.
+  \end{enumerate}
+  \textit{A robot vacuum builds its map the same way \textemdash{} by sensing
+  obstacles and remembering where they are.}
+\end{experiment}
+
+\sectionrule
+
+% --- Safety ---
+\section*{Staying Safe with Home Robots}
+
+\begin{itemize}
+  \item Keep small toys off the floor so vacuum robots do not choke on them.
+  \item Never ride on a robot vacuum \textemdash{} it is not a hoverboard!
+  \item Be careful with voice assistants: do not share personal information
+    like passwords or your home address out loud.
+\end{itemize}
+
+\begin{bigidea}
+  Home robots save time on boring chores so you have more time
+  for fun, family, and creativity. But they still need humans
+  to set them up, maintain them, and make sure they behave.
+\end{bigidea}
+
+\sectionrule
+
+
+\begin{quickcheck}
+  \begin{enumerate}
+    \item How does a robot vacuum know where it has already cleaned?
+    \item Why must a robot vacuum return to its charging dock?
+    \item Name one safety rule for living with home robots.
+  \end{enumerate}
+\end{quickcheck}
+
+\sectionrule
+% --- New Words ---
+\begin{newwords}
+  \begin{description}[labelwidth=3.8cm, leftmargin=4.0cm]
+    \item[Robot vacuum] An autonomous disc-shaped robot that cleans floors.
+    \item[Boundary wire] A buried wire that tells a mowing robot where to stop.
+    \item[Charging dock] A station where a robot returns to refill its battery.
+    \item[Companion robot] A robot designed for social interaction and company.
+    \item[Smart speaker] A voice-controlled assistant with microphone and speaker.
+    \item[Autonomy] The ability to act without human control.
+  \end{description}
+\end{newwords}

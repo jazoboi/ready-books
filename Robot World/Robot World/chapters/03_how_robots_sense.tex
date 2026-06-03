@@ -1,0 +1,181 @@
+% ============================================================
+%  Chapter 3 — How Robots Sense the World
+%  Robot World: Meet the Machines That Help Us
+% ============================================================
+
+\chapter{How Robots Sense the World}
+
+\chapteropening{%
+  You have eyes to see, ears to hear, and skin to feel.
+  Robots have sensors \textemdash{} electronic eyes, ears, and fingertips
+  that help them understand what is happening around them.
+}
+\chapterbadge{Sensors: A Robot's Window to the World}
+
+% --- Introduction ---
+\section*{Why Sensing Matters}
+
+Imagine trying to walk through your house with your eyes closed and your
+ears plugged. You would bump into everything! Robots without sensors would
+do the same.
+
+\character{Dot}{Sensors are the first step in the sense\,--\,think\,--\,act
+  loop. Without them, a robot is just a lump of metal.}
+
+\sectionrule
+
+% --- Types of sensors ---
+\section*{Types of Robot Sensors}
+
+\subsection*{Cameras \textemdash{} Robot Eyes}
+
+\term{Cameras} capture pictures many times per second. A robot's computer analyses
+these images to recognise objects, read signs, or follow a line on the floor.
+
+\begin{funfact}
+  Self-driving cars use up to eight \term{cameras} at once, giving them a
+  360-degree view \textemdash{} humans can only see about 180 degrees!
+\end{funfact}
+
+
+\begin{center}
+\begin{tabularx}{0.88\textwidth}{|X|X|X|}
+  \hline
+  \textbf{Everyday Device} & \textbf{Sensor Used} & \textbf{What It Detects} \\
+  \hline
+  Automatic door & Infrared / motion & A person approaching \\
+  \hline
+  Smartphone & Accelerometer & Tilt (screen rotation) \\
+  \hline
+  Smoke alarm & Optical / ionisation & Smoke particles in air \\
+  \hline
+  Reversing car & Ultrasonic & Objects behind the car \\
+  \hline
+  Fitness tracker & Heart-rate sensor & Your pulse \\
+  \hline
+\end{tabularx}
+\end{center}
+
+\sectionrule
+
+\subsection*{Lidar \textemdash{} Laser Eyes}
+
+\term{Lidar} fires invisible \term{laser} beams in all directions and measures
+how long each beam takes to bounce back. This creates a \term{3D map} of the
+surroundings, even in the dark.
+
+\subsection*{Ultrasonic Sensors \textemdash{} Echo Location}
+
+Just like a bat, these \term{ultrasonic} sensors send out a pulse of sound and listen for the
+echo. The time the echo takes to return tells the robot how far away an
+object is.
+
+\begin{picturethis}
+  Stand in a large empty room and clap your hands. You hear the echo
+  bounce off the walls. An ultrasonic sensor does the same thing, but
+  millions of times faster and with sounds too high for your ears to hear.
+\end{picturethis}
+
+\subsection*{Touch and Pressure Sensors}
+
+Some robots have sensitive skin. Pressure sensors tell them how hard
+they are gripping something \textemdash{} essential for a robot handing you
+a glass of water without crushing it!
+
+\subsection*{Temperature Sensors}
+
+Useful for robots that cook, fight fires, or explore volcanoes.
+They measure heat without needing to touch the surface.
+
+\subsection*{Gyroscopes and Accelerometers}
+
+These sensors tell a robot which way is up, how fast it is moving,
+and whether it is tilting. Drones would tumble out of the sky without them.
+
+\character{Whirr}{My gyroscope keeps me level, even when the wind blows.
+  Without it I would flip upside down in seconds!}
+
+\sectionrule
+
+% --- How sensors work together ---
+\section*{Sensor Fusion \textemdash{} Combining Superpowers}
+
+One sensor alone can be fooled. A camera cannot see in the dark. Lidar
+cannot read colours. So engineers combine several sensors and let the
+computer brain mix all the data together. This is called \term{sensor fusion}.
+
+\begin{bigidea}
+  Sensor fusion means combining information from many sensors
+  to build a more complete picture of the world \textemdash{}
+  just as you use sight \emph{and} hearing \emph{and} touch at the same time.
+\end{bigidea}
+
+\sectionrule
+
+% --- Experiment ---
+\begin{experiment}
+  \textbf{Test your own sensor fusion.}
+  \begin{enumerate}
+    \item Close your eyes and try to touch your nose with one finger.
+    \item Now spin around three times, \emph{then} try again.
+    \item Notice how much harder it is when your balance sensor (inner ear)
+      is confused \textemdash{} even though your touch sensor still works.
+  \end{enumerate}
+  \textit{Robots face the same challenge: if one sensor gives bad data,
+  the brain must rely on the others.}
+\end{experiment}
+
+\sectionrule
+
+% --- Diagram ---
+\begin{diagram}[Common robot sensors and what they detect.]
+  \begin{tikzpicture}[>=Stealth, node distance=1.6cm]
+    \node[draw=RoboGreen!80!black,fill=RoboGreen!15,rounded corners=8pt,
+          minimum width=2.2cm,minimum height=2.8cm,line width=1.2pt,
+          font=\bfseries\small,align=center] (robot) at (0,0) {Robot\\Brain};
+    % Sensors
+    \node[draw=WarmOrange,fill=WarmOrange!10,rounded corners,
+          minimum width=2.8cm,font=\small,right=2.5cm of robot,yshift=2.4cm] (cam) {Camera: light \& colour};
+    \node[draw=SteelBlue,fill=SteelBlue!10,rounded corners,
+          minimum width=2.8cm,font=\small,right=2.5cm of robot,yshift=1.0cm] (lid) {Lidar: distance (laser)};
+    \node[draw=SoftPurple,fill=SoftPurple!10,rounded corners,
+          minimum width=2.8cm,font=\small,right=2.5cm of robot,yshift=-0.4cm] (ult) {Ultrasonic: distance (sound)};
+    \node[draw=CoralRed,fill=CoralRed!10,rounded corners,
+          minimum width=2.8cm,font=\small,right=2.5cm of robot,yshift=-1.8cm] (tch) {Touch: pressure};
+    \node[draw=SunYellow!80!black,fill=SunYellow!10,rounded corners,
+          minimum width=2.8cm,font=\small,left=2.5cm of robot,yshift=0.8cm] (gyr) {Gyroscope: tilt \& spin};
+    \node[draw=LeafGreen,fill=LeafGreen!10,rounded corners,
+          minimum width=2.8cm,font=\small,left=2.5cm of robot,yshift=-0.8cm] (tmp) {Thermometer: heat};
+    % Arrows
+    \draw[->,RoboGreen!60!black] (cam.west) -- (robot.east|-cam.west);
+    \draw[->,RoboGreen!60!black] (lid.west) -- (robot.east|-lid.west);
+    \draw[->,RoboGreen!60!black] (ult.west) -- (robot.east|-ult.west);
+    \draw[->,RoboGreen!60!black] (tch.west) -- (robot.east|-tch.west);
+    \draw[->,RoboGreen!60!black] (gyr.east) -- (robot.west|-gyr.east);
+    \draw[->,RoboGreen!60!black] (tmp.east) -- (robot.west|-tmp.east);
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+
+\begin{quickcheck}
+  \begin{enumerate}
+    \item What does a lidar sensor measure, and how?
+    \item Why is sensor fusion better than using one sensor alone?
+    \item Which sensor would a robot need to detect a hot surface?
+  \end{enumerate}
+\end{quickcheck}
+
+\sectionrule
+% --- New Words ---
+\begin{newwords}
+  \begin{description}[labelwidth=3.8cm, leftmargin=4.0cm]
+    \item[Sensor] A device that measures something in the environment.
+    \item[Lidar] Light Detection and Ranging \textemdash{} uses lasers to map distances.
+    \item[Ultrasonic] Using sound waves above human hearing to detect objects.
+    \item[Sensor fusion] Combining data from multiple sensors for a better picture.
+    \item[Gyroscope] A sensor that measures rotation and tilt.
+    \item[Accelerometer] A sensor that measures changes in speed or direction.
+  \end{description}
+\end{newwords}

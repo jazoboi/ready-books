@@ -1,0 +1,282 @@
+% ============================================================
+%  preamble.tex — Robot World: Meet the Machines That Help Us
+%  Shared packages, colours, fonts, and reusable visual
+%  callout macros for a kid-friendly, visual-first LaTeX book.
+%  Mirrors the style established in Books 1 and 2.
+% ============================================================
+
+% --- Core packages ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{sourcesanspro}
+\usepackage[margin=1in,top=1.2in,bottom=1.2in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes,shapes.symbols,positioning,decorations.pathmorphing,calc,shadows,fit,backgrounds}
+\usepackage{fontawesome5}
+\usepackage{mdframed}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{needspace}
+\usepackage{etoolbox}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{fancyhdr}
+
+% --- Book-wide colour palette ---
+% Primary accent: RoboGreen (robotics theme).
+% Secondary colours match series palette for consistency.
+\definecolor{RoboGreen}{HTML}{00C853}
+\definecolor{WarmOrange}{HTML}{FF9800}
+\definecolor{LeafGreen}{HTML}{4CAF50}
+\definecolor{SunYellow}{HTML}{FFC107}
+\definecolor{CoralRed}{HTML}{F44336}
+\definecolor{SoftPurple}{HTML}{9C27B0}
+\definecolor{SkyBlue}{HTML}{87CEEB}
+\definecolor{LightGray}{HTML}{F5F5F5}
+\definecolor{DarkText}{HTML}{212121}
+\definecolor{NeonGreen}{HTML}{00BFA5}   % teal, for Experiment boxes
+\definecolor{SteelBlue}{HTML}{37474F}   % dark steel for robot diagrams
+\definecolor{MetalGray}{HTML}{78909C}   % metallic accent
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=RoboGreen!80!black,urlcolor=RoboGreen!80!black}
+
+% --- Accessibility: tagged PDF and alt-text support ---
+\usepackage{accsupp}
+\newcommand{\alttext}[2]{%
+  \BeginAccSupp{method=escape,ActualText={#1}}%
+  #2%
+  \EndAccSupp{}%
+}
+
+% --- Index support ---
+\usepackage{makeidx}
+\makeindex
+
+% --- Chapter title styling ---
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries\color{RoboGreen!80!black}}
+  {\chaptertitlename\ \thechapter}{12pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{14pt}{16pt}
+\titleformat{\section}
+  {\normalfont\LARGE\bfseries\color{RoboGreen!80!black}}{\thesection}{0.6em}{}
+\titleformat{\subsection}
+  {\normalfont\Large\bfseries\color{WarmOrange}}{\thesubsection}{0.6em}{}
+
+\AtBeginDocument{\color{DarkText}}
+
+% --- Header / footer ---
+\setlength{\headheight}{14pt}
+\setlength{\emergencystretch}{2em}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\small\bfseries\color{RoboGreen!80!black}\leftmark}}
+\fancyfoot[C]{\color{RoboGreen!80!black}\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyfoot[C]{\color{RoboGreen!80!black}\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+\makeatletter
+\renewcommand{\cleardoublepage}{%
+  \clearpage
+  \if@twoside
+    \ifodd\c@page\else
+      \hbox{}%
+      \thispagestyle{empty}%
+      \newpage
+      \if@twocolumn\hbox{}\newpage\fi
+    \fi
+  \fi
+}
+\makeatother
+\preto{\section}{\needspace{8\baselineskip}}
+\preto{\subsection}{\needspace{6\baselineskip}}
+
+% ============================================================
+%  REUSABLE CALLOUT BOXES
+% ============================================================
+
+% --- Big Idea (green, robot-themed) ---
+\newtcolorbox{bigidea}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=RoboGreen!10, colframe=RoboGreen!80!black,
+  fonttitle=\bfseries\large,
+  title={\faLightbulb\quad Big Idea},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Imagine This (orange) ---
+\newtcolorbox{picturethis}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=WarmOrange!10, colframe=WarmOrange,
+  fonttitle=\bfseries\large,
+  title={\faPaintBrush\quad Imagine This},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Try It (leaf green) ---
+\newtcolorbox{tryit}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=LeafGreen!10, colframe=LeafGreen,
+  fonttitle=\bfseries\large,
+  title={\faHandPointRight\quad Try It},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Experiment (teal) ---
+\newtcolorbox{experiment}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=NeonGreen!10, colframe=NeonGreen,
+  fonttitle=\bfseries\large,
+  title={\faFlask\quad Experiment},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Quick Map (yellow) ---
+\newtcolorbox{quickmap}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=SunYellow!15, colframe=SunYellow!80!black,
+  fonttitle=\bfseries\large,
+  title={Quick Map},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- New Words (soft purple) ---
+\newtcolorbox{newwords}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=SoftPurple!8, colframe=SoftPurple,
+  fonttitle=\bfseries\large,
+  title={\faBook\quad New Words},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Did You Know? (coral red) ---
+\newtcolorbox{funfact}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=CoralRed!8, colframe=CoralRed,
+  fonttitle=\bfseries\large,
+  title={\faStar\quad Did You Know?},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% --- Quick Check (steel blue) — consistent end-of-chapter review ---
+\newtcolorbox{quickcheck}[1][]{
+  enhanced, before upper=\RaggedRight,
+  colback=SteelBlue!8, colframe=SteelBlue!80,
+  fonttitle=\bfseries\large,
+  title={\faClipboardCheck\quad Quick Check},
+  arc=6pt, boxrule=1.5pt,
+  left=8pt, right=8pt, top=6pt, bottom=6pt, #1
+}
+
+% ============================================================
+%  DIAGRAM WRAPPER
+% ============================================================
+\makeatletter
+\newenvironment{diagram}[1][]{%
+  \def\@diagramcaption{#1}%
+  \begin{figure}[htbp]
+    \centering
+    \BeginAccSupp{method=escape,ActualText={#1}}%
+    \begin{tcolorbox}[
+      enhanced,
+      colback=SkyBlue!8, colframe=SkyBlue!50!black,
+      boxrule=0.8pt, arc=6pt,
+      left=8pt, right=8pt, top=8pt, bottom=8pt
+    ]
+    \centering
+}{%
+    \end{tcolorbox}
+    \EndAccSupp{}%
+    \ifx\@diagramcaption\@empty\else
+      \vspace{4pt}{\small\itshape\@diagramcaption}%
+    \fi
+  \end{figure}%
+}
+\makeatother
+
+% ============================================================
+%  CHARACTER CALLOUT HELPER
+%  Usage: \character{Bolt}{I am built to move!}
+% ============================================================
+\newcommand{\character}[2]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=RoboGreen!8, colframe=RoboGreen!60!black,
+    arc=10pt, boxrule=1pt,
+    left=10pt, right=10pt, top=6pt, bottom=6pt,
+    title={\textbf{\Large #1}},
+    fonttitle=\bfseries\color{DarkText},
+    before upper=\RaggedRight
+  ]
+  \itshape ``#2''
+  \end{tcolorbox}%
+}
+
+% ============================================================
+%  CHAPTER OPENING HELPER
+% ============================================================
+\newcommand{\chapteropening}[1]{%
+  \begin{tcolorbox}[
+    enhanced,
+    colback=LightGray, colframe=RoboGreen!40,
+    arc=4pt, boxrule=0.8pt,
+    left=10pt, right=10pt, top=8pt, bottom=8pt,
+    before upper=\RaggedRight
+  ]
+  \large\itshape #1
+  \end{tcolorbox}%
+  \vspace{6pt}%
+}
+
+% --- Chapter badge ---
+\newcommand{\chapterbadge}[1]{%
+  \begin{center}
+    \begin{tcolorbox}[enhanced,colback=SunYellow!20,colframe=SunYellow!70!black,
+      arc=10pt,boxrule=1pt,left=10pt,right=10pt,top=8pt,bottom=8pt]
+      \centering\Large\bfseries\color{RoboGreen!80!black}#1
+    \end{tcolorbox}
+  \end{center}
+}
+
+% --- Named chapter (front/back matter) ---
+\newcommand{\namedchapter}[1]{%
+  \chapter*{#1}%
+  \markboth{#1}{#1}%
+}
+
+% --- Section divider ---
+\newcommand{\sectionrule}{%
+  \vspace{4pt}%
+  {\color{RoboGreen!40}\hrule height 0.6pt}%
+  \vspace{10pt}%
+}
+
+% --- Inline bold term (adds index entry) ---
+\newcommand{\term}[1]{%
+  \textbf{\color{RoboGreen!80!black}#1}\index{#1}%
+}
+
+% --- Glossary display term ---
+\newcommand{\glossterm}[1]{%
+  \textbf{\color{RoboGreen!80!black}#1}%
+}

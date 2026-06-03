@@ -1,0 +1,149 @@
+% ============================================================
+%  Chapter 4 — The Amazing Touchscreen
+%  Inside a Smartphone: The Tiny World in Your Hand
+% ============================================================
+
+\chapter{The Amazing Touchscreen}
+
+\chapteropening{%
+  Every tap, swipe, and pinch you make on a phone screen is sending
+  a signal to the processor. But how does a flat piece of glass know
+  where your finger is?
+}
+\chapterbadge{Mission: Understand the Magic of Touch!}
+
+% --- Opening ---
+\section*{Meet Tappy}
+
+\character{Tappy}{Hello! I am Tappy — and I live right here on the surface of the screen.
+  Every time a finger lands on the glass, I feel it.
+  I know exactly where it touched, how many fingers touched at once,
+  and how long they stayed. Then I tell Chip what to do next.}
+
+\sectionrule
+
+% --- How touch works ---
+\section*{How Touching the Screen Sends Commands}
+
+A smartphone screen is a \term{capacitive touchscreen}.
+``Capacitive'' means it works with an invisible electrical field spread across the glass.
+
+Your skin can conduct a tiny amount of electricity.
+When your finger touches the screen:
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item The screen's invisible grid of sensors detects a change in that electrical field.
+  \item The sensors record the exact location of the touch.
+  \item That information is sent to the processor as an instruction.
+  \item The processor decides what to do (open an app, scroll the page, etc.).
+\end{enumerate}
+
+\begin{picturethis}
+  Imagine the screen is covered by an invisible net of tiny tripwires.
+  When your finger lands, it triggers the tripwires nearby.
+  The phone measures \emph{which} wires were triggered to figure out
+  exactly where you touched.
+\end{picturethis}
+
+\begin{funfact}
+  Most ordinary gloves prevent touchscreens from working, because they block the electrical signal from your fingertip.
+  But special ``touchscreen gloves'' are made with conductive material
+  (material that lets electricity pass through)
+  in the fingertips so the signal passes through.
+\end{funfact}
+
+\sectionrule
+
+% --- Gestures ---
+\section*{Swiping, Tapping, and Pinching}
+
+Different finger movements (called \term{gestures}) send different instructions.
+
+\begin{quickmap}
+  \begin{center}
+  \begin{tabular}{ll}
+    \textbf{Gesture} & \textbf{What it usually does} \\
+    \hline
+    Tap             & Select or open something \\
+    Double tap      & Zoom in or like a photo \\
+    Swipe           & Scroll or switch between screens \\
+    Pinch in        & Zoom out \\
+    Spread out      & Zoom in \\
+    Long press      & Open extra options \\
+    Drag            & Move something across the screen \\
+  \end{tabular}
+  \end{center}
+\end{quickmap}
+
+\sectionrule
+
+% --- Pixels and the display ---
+\section*{The Screen Itself: Millions of Tiny Lights}
+
+Beneath the touch sensors is the actual display.
+It is made up of millions of tiny dots of light called \term{pixels}.
+Each pixel can be set to any colour.
+When millions of pixels light up together, they form the images you see.
+
+On the same-sized screen, more pixels means a sharper, more detailed image.
+The number of pixels on a screen is its \term{screen resolution}.
+
+\begin{diagram}[A grid of pixels makes up every image on the screen.]
+  \begin{tikzpicture}
+    % 6 columns x 4 rows of pixels — each a hardcoded colour
+    % Row 0 (bottom)
+    \foreach \x/\y/\col in {
+      0/0/TechPurple!85,  1/0/WarmOrange!80,  2/0/LeafGreen!75,
+      3/0/CoralRed!70,    4/0/SkyBlue!80,     5/0/SoftPurple!65,
+      0/1/SkyBlue!60,     1/1/TechPurple!60,  2/1/WarmOrange!60,
+      3/1/LeafGreen!65,   4/1/CoralRed!55,    5/1/SunYellow!70,
+      0/2/LeafGreen!50,   1/2/CoralRed!50,    2/2/SkyBlue!70,
+      3/2/TechPurple!75,  4/2/WarmOrange!65,  5/2/LeafGreen!55,
+      0/3/WarmOrange!70,  1/3/LeafGreen!70,   2/3/CoralRed!65,
+      3/3/SkyBlue!55,     4/3/TechPurple!55,  5/3/CoralRed!40
+    }{
+      \fill[\col] (\x*0.8,\y*0.8) rectangle (\x*0.8+0.74,\y*0.8+0.74);
+    }
+    \node[below,font=\small\itshape] at (2.0,-0.25)
+      {Each small square is one pixel. Together they form a picture.};
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+\begin{newwords}
+  \begin{description}[labelwidth=4.2cm, leftmargin=4.4cm]
+    \item[\term{Capacitive touchscreen}] A screen that detects where your finger changes its invisible electrical field.
+    \item[\term{Gesture}]               A finger movement that sends a command.
+    \item[\term{Pixel}]                 A tiny dot of colour on a screen.
+    \item[\term{Screen resolution}]     The number of pixels on a screen.
+  \end{description}
+\end{newwords}
+
+\sectionrule
+
+\begin{experiment}
+  \textbf{Glove test!}
+
+  Try tapping the screen of a smartphone with:
+  \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Your bare finger.
+    \item A rubber glove or washing-up glove.
+    \item A knitted glove.
+    \item The eraser end of a pencil.
+  \end{enumerate}
+  Which ones work? Which ones do not? Can you explain why?
+
+  \emph{Hint: think about whether each material conducts electricity.}
+\end{experiment}
+
+\sectionrule
+
+\begin{bigidea}
+  A touchscreen detects the \textbf{electrical charge} from your fingertip.
+  Different finger gestures send different commands to the processor,
+  which decides what happens on screen.
+\end{bigidea}
+
+\character{Tappy}{You are a great communicator! Now let's visit
+  another amazing part of the phone — the cameras. Meet Lens in Chapter 5!}

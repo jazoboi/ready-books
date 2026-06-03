@@ -1,0 +1,196 @@
+% ============================================================
+%  Chapter 7 — Robots in Space and Deep Sea
+%  Robot World: Meet the Machines That Help Us
+% ============================================================
+
+\chapter{Robots in Space and Deep Sea}
+
+\chapteropening{%
+  Some places are too hot, too cold, too far, or too deep for humans.
+  That is where robots really shine \textemdash{} they go where we cannot.
+}
+\chapterbadge{Sprocket and Tread: Exploring the Unknown}
+
+% --- Space robots ---
+\section*{Robots in Space}
+
+Space is one of the most dangerous environments imaginable: no air, extreme
+temperatures, and deadly \term{radiation}. Sending a robot instead of a person
+is often safer, cheaper, and sometimes the only option.
+
+\character{Sprocket}{I am inspired by the \term{Mars rovers}! They roll across
+  another planet, drill into rocks, and send photos back to Earth
+  \textemdash{} all by themselves, because radio signals take up to
+  20 minutes to travel between Mars and Earth.}
+
+\subsection*{Mars Rovers}
+
+NASA has sent several rovers to Mars:
+\begin{itemize}
+  \item \textbf{Sojourner} (1997) \textemdash{} the first, about the size of a microwave.
+  \item \textbf{Spirit and Opportunity} (2004) \textemdash{} golf-cart-sized explorers.
+  \item \textbf{Curiosity} (2012) \textemdash{} car-sized, still exploring today.
+  \item \textbf{Perseverance} (2021) \textemdash{} searching for signs of ancient life.
+\end{itemize}
+
+\begin{funfact}
+  Perseverance carries a tiny helicopter called Ingenuity \textemdash{}
+  the first aircraft ever to fly on another planet!
+\end{funfact}
+
+
+% --- Diagram ---
+\begin{diagram}[A Mars rover and its key parts.]
+  \begin{tikzpicture}[>=Stealth]
+    % Rover body
+    \draw[fill=MetalGray!20,draw=SteelBlue,line width=1.2pt,rounded corners=4pt]
+      (0,1) rectangle (5,3);
+    \node[font=\small\bfseries,align=center] at (2.5,2) {Rover Body\\(computer + instruments)};
+    % Wheels
+    \foreach \x in {0.7, 2.5, 4.3} {
+      \draw[fill=SteelBlue!30,draw=SteelBlue,line width=1pt] (\x,0.5) circle (0.45);
+    }
+    \node[font=\scriptsize] at (2.5,0) {6 wheels with independent motors};
+    % Solar panel
+    \draw[fill=SunYellow!30,draw=SunYellow!70!black,line width=1pt]
+      (0.5,3) -- (0.2,4) -- (2.3,4) -- (2,3) -- cycle;
+    \node[font=\scriptsize\bfseries,above] at (1.25,4) {Solar panel};
+    % Camera mast
+    \draw[SteelBlue,line width=1.5pt] (3.8,3) -- (3.8,4.2);
+    \draw[fill=WarmOrange!20,draw=WarmOrange,line width=1pt,rounded corners=2pt]
+      (3.3,4.2) rectangle (4.3,4.7);
+    \node[font=\scriptsize\bfseries,above] at (3.8,4.7) {Cameras};
+    % Antenna
+    \draw[CoralRed,line width=1.2pt] (4.5,3) -- (4.8,3.8);
+    \draw[fill=CoralRed!20,draw=CoralRed,line width=0.8pt] (4.8,3.8) circle (0.2);
+    \node[font=\scriptsize\bfseries,right] at (5.05,3.8) {Antenna};
+    % Robot arm
+    \draw[RoboGreen!70!black,line width=1.5pt] (0,2) -- (-0.8,2.5) -- (-1.4,1.8);
+    \node[font=\scriptsize\bfseries,left] at (-1.5,1.8) {Drill arm};
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+\subsection*{Robotic Arms on the Space Station}
+
+The International Space Station has a giant \term{robotic arm} called
+\textbf{\term{Canadarm2}}. It catches visiting spacecraft, moves equipment,
+and helps astronauts during spacewalks.
+
+\sectionrule
+
+% --- Deep-sea robots ---
+\section*{Robots Under the Sea}
+
+The deep ocean is almost as alien as space. At the bottom of the
+Mariana Trench \textemdash{} 11 kilometres down \textemdash{} the pressure
+would crush a human instantly.
+
+\subsection*{ROVs \textemdash{} Remotely Operated Vehicles}
+
+\term{ROVs} are connected to a ship by a long cable. A human pilot
+controls them from the surface using cameras and joysticks.
+They repair undersea cables, inspect oil rigs, and film deep-sea creatures.
+
+\subsection*{AUVs \textemdash{} Autonomous Underwater Vehicles}
+
+\term{AUVs} have no cable. They are programmed with a mission, dive down,
+collect data, and return on their own. Scientists use them to map the
+ocean floor and monitor coral reefs.
+
+\begin{picturethis}
+  Imagine swimming to the bottom of 40 stacked swimming pools \textemdash{}
+  that is how deep some AUVs can go. It is pitch black, freezing cold,
+  and the water presses on every surface with enormous force.
+\end{picturethis}
+
+\sectionrule
+
+% --- \term{Rescue robots} ---
+\section*{Rescue Robots}
+
+\character{Tread}{When a building collapses or a volcano erupts,
+  I go in first. I am built tough \textemdash{} heat, dust, and rubble
+  cannot stop me. I search for survivors with cameras and heat sensors.}
+
+Rescue robots:
+\begin{itemize}
+  \item Crawl through rubble after earthquakes.
+  \item Fly drones over wildfire zones to find trapped people.
+  \item Carry supplies into flooded areas.
+\end{itemize}
+
+\begin{bigidea}
+  Robots do not get scared, do not need oxygen, and do not feel pain.
+  That makes them perfect for jobs that are too dangerous for humans.
+\end{bigidea}
+
+\sectionrule
+
+
+% --- Comparison table ---
+\section*{Comparing Space and Sea Robots}
+
+\begin{center}
+\begin{tabularx}{0.9\textwidth}{|X|X|X|}
+  \hline
+  & \textbf{Space Robots} & \textbf{Deep-Sea Robots} \\
+  \hline
+  \textbf{Challenge} & No air, radiation, extreme cold/heat & Crushing pressure, darkness \\
+  \hline
+  \textbf{Power} & Solar panels or nuclear batteries & Battery or cable from ship \\
+  \hline
+  \textbf{Communication} & Radio (slow --- \term{signal delay}) & Cable (ROV) or acoustic (AUV) \\
+  \hline
+  \textbf{Movement} & Wheels (rovers) or thrusters & Propellers or fins \\
+  \hline
+  \textbf{Example} & Perseverance (Mars) & Jason (deep-sea ROV) \\
+  \hline
+\end{tabularx}
+\end{center}
+
+\begin{funfact}
+  The deepest-diving robot, \textbf{Nereus}, reached the bottom of the
+  Mariana Trench --- 10,902 metres below the surface. That is deeper
+  than Mount Everest is tall!
+\end{funfact}
+
+\sectionrule
+
+% --- Experiment ---
+\begin{experiment}
+  \textbf{Simulate a signal delay.}
+  \begin{enumerate}
+    \item Ask a friend to stand across the playground.
+    \item Give them instructions by walkie-talkie, but wait 10 seconds
+      before each command (simulating the Mars signal delay).
+    \item Try to guide them around cones.
+  \end{enumerate}
+  \textit{This shows why Mars rovers must be partly autonomous \textemdash{}
+  waiting for instructions from Earth is too slow!}
+\end{experiment}
+
+\sectionrule
+
+
+\begin{quickcheck}
+  \begin{enumerate}
+    \item Why do Mars rovers need to be partly autonomous?
+    \item What is the difference between an ROV and an AUV?
+    \item Name one dangerous job that rescue robots can do.
+  \end{enumerate}
+\end{quickcheck}
+
+\sectionrule
+% --- New Words ---
+\begin{newwords}
+  \begin{description}[labelwidth=3.8cm, leftmargin=4.0cm]
+    \item[Rover] A wheeled robot designed to travel across a planet's surface.
+    \item[ROV] Remotely Operated Vehicle \textemdash{} controlled by a human via cable.
+    \item[AUV] Autonomous Underwater Vehicle \textemdash{} navigates on its own.
+    \item[Signal delay] The time a radio message takes to travel a long distance.
+    \item[Radiation] Invisible energy in space that is harmful to living things.
+    \item[Autonomous] Able to operate without human control.
+  \end{description}
+\end{newwords}

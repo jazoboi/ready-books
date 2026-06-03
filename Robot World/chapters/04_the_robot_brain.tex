@@ -1,0 +1,185 @@
+% ============================================================
+%  Chapter 4 — The Robot Brain: Programming and Instructions
+%  Robot World: Meet the Machines That Help Us
+% ============================================================
+
+\chapter{The Robot Brain}
+
+\chapteropening{%
+  A robot can have the strongest arm and the sharpest sensors in the world,
+  but without instructions it will just sit there doing nothing.
+  The brain is what brings a robot to life.
+}
+\chapterbadge{Code: The Language Robots Understand}
+
+% --- What is a robot brain? ---
+\section*{The Controller}
+
+Inside every robot is a small computer called the \term{controller}.
+It reads information from the sensors, decides what to do, and sends
+commands to the motors.
+
+\begin{picturethis}
+  Imagine if your teacher gave the class no instructions for a science
+  experiment. Everyone might mix different things at different times and
+  the results would be chaos! A robot programme is like the experiment
+  instructions that keep everything on track --- a recipe the robot
+  follows step by step.
+\end{picturethis}
+
+\character{Dot}{Remember the processor inside a smartphone? A robot's
+  controller is very similar \textemdash{} it follows instructions millions
+  of times per second.}
+
+\sectionrule
+
+% --- Programming ---
+\section*{How Do We Tell Robots What to Do?}
+
+Humans write instructions in a \term{programming language}. Popular ones
+for robots include:
+
+\begin{itemize}
+  \item \textbf{\term{Python}} \textemdash{} easy to read, great for beginners.
+  \item \textbf{C/C++} \textemdash{} fast, used in many industrial robots.
+  \item \textbf{\term{Scratch}} \textemdash{} block-based, brilliant for learning logic.
+  \item \textbf{\term{ROS}} \textemdash{} Robot Operating System, a toolkit engineers use to
+    make different robot parts work together.
+\end{itemize}
+
+\begin{funfact}
+  The first programmable robot was ``Unimate'', installed in a General Motors
+  factory in 1961. It was programmed by manually moving its arm and recording
+  the positions \textemdash{} no typing needed!
+\end{funfact}
+
+\sectionrule
+
+% --- Algorithms ---
+\section*{Algorithms \textemdash{} Step-by-Step Plans}
+
+An \term{algorithm} is a set of clear steps that solves a problem.
+Every robot programme is made of algorithms.
+
+\begin{quickmap}
+  \textbf{Algorithm: avoid an obstacle}
+  \begin{enumerate}
+    \item Move forward.
+    \item If the distance sensor reads less than 30\,cm, stop.
+    \item Turn right 90 degrees.
+    \item Go back to step 1.
+  \end{enumerate}
+\end{quickmap}
+
+\sectionrule
+
+% --- Loops and conditions ---
+\section*{Loops and Decisions}
+
+Two superpowers of every programme:
+
+\begin{itemize}
+  \item \textbf{\term{Loops}} \textemdash{} repeat something over and over.
+    Example: ``Keep spinning the propellers until I say stop.''
+  \item \textbf{\term{Conditions}} \textemdash{} choose what to do based on information.
+    Example: ``IF the floor sensor sees a cliff, THEN stop and turn around.''
+\end{itemize}
+
+\begin{bigidea}
+  Every clever thing a robot does is built from simple building blocks:
+  sequences, loops, and conditions. Stack enough of them together
+  and you get a machine that \emph{looks} intelligent.
+\end{bigidea}
+
+\sectionrule
+
+% --- Try It ---
+\begin{tryit}
+  Write an algorithm for making a sandwich. Be very precise \textemdash{}
+  remember, a robot cannot guess! For example:
+  \begin{enumerate}
+    \item Pick up bread with left gripper.
+    \item Place bread on plate.
+    \item Pick up butter knife\ldots
+  \end{enumerate}
+  How many steps did you need?
+\end{tryit}
+
+\sectionrule
+
+
+
+\begin{experiment}
+  \textbf{Programme a human robot.}
+  \begin{enumerate}
+    \item Ask a friend to be the ``robot'' and blindfold them (or close their eyes).
+    \item Place a target (a book or toy) across the room.
+    \item You are the programmer --- you may only say: \textbf{Forward},
+      \textbf{Stop}, \textbf{Turn left}, or \textbf{Turn right}.
+    \item Try to guide your robot to touch the target.
+    \item Count how many commands it takes.
+  \end{enumerate}
+  \textit{Notice how precise you must be --- saying ``go over there''
+  means nothing to a robot! This is exactly why programmes need
+  clear, step-by-step instructions.}
+\end{experiment}
+
+\sectionrule
+
+% --- AI preview ---
+\section*{Can Robot Brains Learn?}
+
+Most robots follow fixed programmes. But some newer robots can \emph{learn}
+from examples --- a bit like practising until you get better at a video game.
+
+\begin{itemize}
+  \item A robot arm might try a thousand ways to pick up an egg until it
+    finds the gentlest grip.
+  \item A delivery robot might learn which routes have fewer obstacles.
+\end{itemize}
+
+This ability is called \term{machine learning}, and it is a type of
+\term{artificial intelligence} (AI). We will explore AI much more in
+Book~4: \emph{When Machines Start Thinking}!
+
+\sectionrule
+
+% --- Diagram ---
+\begin{diagram}[Inside a robot controller: sensors in, decisions made, commands out.]
+  \begin{tikzpicture}[>=Stealth, node distance=2.5cm]
+    \node[draw=MetalGray,fill=MetalGray!10,rounded corners,
+          minimum width=2cm,minimum height=1cm,font=\small\bfseries] (sin) {Sensor data in};
+    \node[draw=RoboGreen!80!black,fill=RoboGreen!15,rounded corners=10pt,
+          minimum width=3cm,minimum height=1.8cm,line width=1.2pt,
+          font=\bfseries,right=of sin] (brain) {Controller};
+    \node[draw=WarmOrange,fill=WarmOrange!10,rounded corners,
+          minimum width=2cm,minimum height=1cm,font=\small\bfseries,right=of brain] (mout) {Motor commands};
+    \draw[->,line width=1.5pt,MetalGray] (sin) -- (brain);
+    \draw[->,line width=1.5pt,WarmOrange] (brain) -- (mout);
+    \node[font=\scriptsize\itshape,below=0.3cm of brain] {Runs the programme};
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+
+\begin{quickcheck}
+  \begin{enumerate}
+    \item What is an algorithm?
+    \item Name the two programming superpowers mentioned in this chapter.
+    \item Why does a robot need very precise instructions?
+  \end{enumerate}
+\end{quickcheck}
+
+\sectionrule
+% --- New Words ---
+\begin{newwords}
+  \begin{description}[labelwidth=3.8cm, leftmargin=4.0cm]
+    \item[Controller] The computer board inside a robot that runs the programme.
+    \item[Programme] A set of instructions written in a programming language.
+    \item[Algorithm] A step-by-step method for solving a problem.
+    \item[Loop] An instruction that repeats until a condition is met.
+    \item[Condition] A yes/no check that changes what the programme does next.
+    \item[ROS] Robot Operating System \textemdash{} a popular framework for robot software.
+  \end{description}
+\end{newwords}

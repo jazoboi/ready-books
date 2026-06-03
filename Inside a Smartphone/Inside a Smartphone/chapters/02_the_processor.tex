@@ -1,0 +1,138 @@
+% ============================================================
+%  Chapter 2 — Meet the Brain: The Processor
+%  Inside a Smartphone: The Tiny World in Your Hand
+% ============================================================
+
+\chapter{Meet the Brain: The Processor}
+
+\chapteropening{%
+  Everything your phone does — every tap, swipe, photo, and song —
+  starts with one tiny chip doing billions of calculations every second.
+}
+\chapterbadge{Mission: Follow an Instruction Through the Brain!}
+
+% --- Opening ---
+\section*{Meet Chip}
+
+Dot led Sam deeper into the phone, past glowing wires and humming circuits,
+until they reached the heart of the device — a flat, shiny square no bigger than a fingernail.
+
+A tiny character with sparkling eyes and a crisp silver jacket waved at them.
+
+\character{Chip}{Welcome! I am Chip — the processor.
+  Everything you do on this phone passes through me first.
+  When you tap the screen, I get the message.
+  When you take a photo, I handle it.
+  Even reading this book on a screen would go through me.}
+
+\sectionrule
+
+% --- What a processor does ---
+\section*{What Does a Processor Do?}
+
+A \term{processor} (also called a CPU — Central Processing Unit) is the brain of the smartphone.
+Its job is to follow \term{instructions}.
+
+Every action you take on a phone is turned into a long list of instructions.
+The processor reads each instruction and carries it out, one after another,
+billions of times every second.
+
+\begin{picturethis}
+  The processor is like a chef in a very busy kitchen.
+  Orders keep arriving: chop this, heat that, plate this next.
+  The chef follows each instruction in order, very fast.
+  The processor does the same thing — except it handles billions
+  of instructions in the time it takes you to blink.
+\end{picturethis}
+
+\sectionrule
+
+% --- Transistors ---
+\section*{Billions of Tiny Switches}
+
+Inside a processor are billions of microscopic switches called \term{transistors}.
+Each transistor can be either \textbf{on} (1) or \textbf{off} (0).
+These ones and zeros are called \term{binary code} — the language all computers use.
+Groups of ones and zeros can represent numbers, words, colours, and sounds.
+
+\begin{funfact}
+  A modern smartphone processor contains more than \textbf{10 billion transistors}.
+  Each one is incredibly tiny. If you lined transistors up across a single
+  human hair, thousands would fit.
+\end{funfact}
+
+\sectionrule
+
+% --- Speed ---
+\section*{Why Speed Matters}
+
+Processor speed is measured in \term{gigahertz} (GHz).
+One gigahertz means one billion steps per second.
+
+\begin{quickmap}
+  \textbf{What happens when you tap a photo to open it:}
+  \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item The touchscreen detects your tap and sends a signal.
+    \item The processor receives the signal (an instruction).
+    \item The processor fetches the photo data from storage.
+    \item The processor unpacks the image data into pixels.
+    \item The processor sends the image to the screen.
+    \item All of this happens in a fraction of a second.
+  \end{enumerate}
+\end{quickmap}
+
+\begin{diagram}[The processor connects to all other parts of the phone.]
+  \begin{tikzpicture}[>=Stealth, node distance=1.8cm]
+    \node[draw=TechPurple,fill=TechPurple!20,rounded corners,
+          minimum width=2.4cm,minimum height=1.2cm,line width=1.2pt,
+          align=center,font=\bfseries] (cpu) {Processor\\(Chip)};
+    \node[draw=SoftPurple!70,fill=SoftPurple!10,rounded corners,
+          minimum width=2cm,minimum height=0.8cm,above=of cpu] (ram) {RAM};
+    \node[draw=LeafGreen!70,fill=LeafGreen!10,rounded corners,
+          minimum width=2cm,minimum height=0.8cm,right=of cpu] (store) {Storage};
+    \node[draw=WarmOrange!70,fill=WarmOrange!10,rounded corners,
+          minimum width=2cm,minimum height=0.8cm,below=of cpu] (screen) {Screen};
+    \node[draw=CoralRed!70,fill=CoralRed!10,rounded corners,
+          minimum width=2cm,minimum height=0.8cm,left=of cpu] (touch) {Touchscreen};
+    \draw[<->,thick,TechPurple] (cpu) -- (ram);
+    \draw[<->,thick,TechPurple] (cpu) -- (store);
+    \draw[<->,thick,TechPurple] (cpu) -- (screen);
+    \draw[<->,thick,TechPurple] (cpu) -- (touch);
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+\begin{newwords}
+  \begin{description}[labelwidth=3.5cm, leftmargin=3.7cm]
+    \item[\term{Processor}]    The brain chip that carries out all instructions.
+    \item[\term{Transistor}]   A microscopic on/off switch inside a processor.
+    \item[\term{Binary code}]  The language of ones and zeros that computers use.
+    \item[\term{Gigahertz}]    A unit of speed: one billion steps per second.
+    \item[\term{Instruction}]  A single command the processor must carry out.
+  \end{description}
+\end{newwords}
+
+\sectionrule
+
+\begin{tryit}
+  \textbf{Be the processor!}
+
+  Ask a friend to give you instructions one at a time
+  (e.g., ``Pick up the pencil'', ``Move it to the table'', ``Put it down'').
+  Follow each instruction \emph{exactly} as given.
+  What happens if an instruction is unclear?
+
+  \emph{This is why programmers must write instructions very carefully.}
+\end{tryit}
+
+\sectionrule
+
+\begin{bigidea}
+  The \textbf{processor} is the brain of the phone.
+  It follows billions of instructions every second using tiny transistors
+  and controls everything else inside the phone.
+\end{bigidea}
+
+\character{Chip}{I need somewhere to hold all the information I am working on.
+  That is where my friend Memo comes in. On to Chapter 3!}

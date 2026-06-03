@@ -1,0 +1,177 @@
+% ============================================================
+%  Chapter 5 — Factory Robots
+%  Robot World: Meet the Machines That Help Us
+% ============================================================
+
+\chapter{Factory Robots}
+
+\chapteropening{%
+  Walk into a car factory and you will see hundreds of robot arms
+  welding, painting, and bolting \textemdash{} all day, all night, never stopping
+  for a snack.
+}
+\chapterbadge{Bolt's Home: The Assembly Line}
+
+% --- Introduction ---
+\section*{The Robot Factory}
+
+Factories were the first places robots found real work. In the 1960s,
+engineers realised that robots could do repetitive, dangerous, or
+extremely precise jobs better than humans.
+
+\character{Bolt}{This is where I live! I weld 400 metal joints every hour.
+  My human teammates handle the creative parts \textemdash{}
+  I handle the heavy lifting.}
+
+\sectionrule
+
+% --- What factory robots do ---
+\section*{Jobs on the Line}
+
+\begin{itemize}
+  \item \term{Welding} \textemdash{} joining metal pieces with intense heat.
+  \item \term{Painting} \textemdash{} spraying perfectly even coats of paint.
+  \item \term{Assembly} \textemdash{} fitting parts together (screws, clips, glue).
+  \item \term{Pick and place} \textemdash{} grabbing items from a conveyor belt and placing them in boxes.
+  \item \term{Quality inspection} \textemdash{} using cameras to spot defects smaller than a grain of sand.
+  \item \term{Palletising} \textemdash{} stacking boxes onto pallets ready for shipping.
+\end{itemize}
+
+\begin{funfact}
+  A single car factory can have over 1,000 robots. Together they can
+  build a complete car body in under one minute!
+\end{funfact}
+
+\sectionrule
+
+% --- Cobots ---
+\section*{Cobots \textemdash{} Robots That Work With People}
+
+Older factory robots work behind safety cages because they are so
+strong they could hurt someone by accident. But a new generation of
+\term{collaborative robots} (cobots) are designed to work \emph{beside}
+humans safely.
+
+Cobots have:
+\begin{itemize}
+  \item Padded, rounded bodies (no sharp edges).
+  \item Force sensors that stop them instantly if they bump someone.
+  \item Slower movements in shared workspaces.
+\end{itemize}
+
+\begin{bigidea}
+  Cobots do not replace humans \textemdash{} they become teammates.
+  The cobot handles heavy or boring tasks while the human does
+  the thinking, checking, and problem-solving.
+\end{bigidea}
+
+\sectionrule
+
+% --- Warehouse robots ---
+\section*{Warehouse Robots}
+
+When you order something online, a warehouse robot may help find it.
+Fleets of small orange robots at companies like Amazon carry entire
+shelving units to human packers, saving them thousands of steps a day.
+
+\begin{picturethis}
+  Imagine a library where the bookshelves come to \emph{you} instead
+  of you walking to the shelves. That is what warehouse robots do
+  with products.
+\end{picturethis}
+
+\sectionrule
+
+
+% --- How an assembly line works ---
+\section*{How an Assembly Line Works}
+
+\begin{quickmap}
+  \textbf{A car on the assembly line:}
+  \begin{enumerate}
+    \item Robot welder joins the metal body panels.
+    \item Robot arm bolts doors into place.
+    \item Painting robot sprays three coats of colour.
+    \item Camera robot inspects for scratches or dents.
+    \item Human worker adds seats, wiring, and trim.
+    \item Robot lifts the engine into position.
+    \item Quality robot runs a final check.
+    \item Finished car rolls off the line!
+  \end{enumerate}
+\end{quickmap}
+
+\sectionrule
+
+% --- Diagram ---
+\begin{diagram}[A simplified assembly line: products move past robot stations.]
+  \begin{tikzpicture}[>=Stealth, node distance=2.2cm]
+    % Conveyor belt
+    \draw[MetalGray,line width=3pt] (-1,0) -- (11,0);
+    \draw[MetalGray,line width=1pt,dashed] (-1,-0.15) -- (11,-0.15);
+    \node[font=\scriptsize\itshape,below] at (5,-0.3) {Conveyor belt};
+    % Stations
+    \node[draw=RoboGreen!80!black,fill=RoboGreen!15,rounded corners=4pt,
+          minimum width=1.8cm,minimum height=1cm,font=\scriptsize\bfseries,
+          above=0.6cm] at (1,0) {Weld};
+    \node[draw=WarmOrange,fill=WarmOrange!15,rounded corners=4pt,
+          minimum width=1.8cm,minimum height=1cm,font=\scriptsize\bfseries,
+          above=0.6cm] at (4,0) {Paint};
+    \node[draw=SteelBlue,fill=SteelBlue!15,rounded corners=4pt,
+          minimum width=1.8cm,minimum height=1cm,font=\scriptsize\bfseries,
+          above=0.6cm] at (7,0) {Inspect};
+    \node[draw=SunYellow!80!black,fill=SunYellow!15,rounded corners=4pt,
+          minimum width=1.8cm,minimum height=1cm,font=\scriptsize\bfseries,
+          above=0.6cm] at (10,0) {Pack};
+    % Arrows on belt
+    \draw[->,line width=1.2pt,RoboGreen!60!black] (2.2,0.08) -- (2.8,0.08);
+    \draw[->,line width=1.2pt,WarmOrange!80!black] (5.2,0.08) -- (5.8,0.08);
+    \draw[->,line width=1.2pt,SteelBlue!80!black] (8.2,0.08) -- (8.8,0.08);
+  \end{tikzpicture}
+\end{diagram}
+
+\sectionrule
+
+% --- Imagine If ---
+\begin{picturethis}
+  Imagine if every time you made a sandwich, you had to walk to a
+  different room for bread, then another for butter, then another for
+  cheese. An assembly line brings everything to you in order ---
+  that is why factories can build a car in under a minute.
+\end{picturethis}
+
+\sectionrule
+
+% --- Try It ---
+\begin{tryit}
+  Set up a mini assembly line at home.
+  \begin{enumerate}
+    \item Gather ten identical objects (LEGO bricks, cards, or coins).
+    \item Time yourself placing them into a box one by one.
+    \item Now ask a friend to pass them to you (like a cobot helping).
+    \item Is the teamwork version faster? By how much?
+  \end{enumerate}
+\end{tryit}
+
+\sectionrule
+
+
+\begin{quickcheck}
+  \begin{enumerate}
+    \item What is the difference between a robot and a cobot?
+    \item Name three jobs that factory robots do on an assembly line.
+    \item How do warehouse robots save workers thousands of steps?
+  \end{enumerate}
+\end{quickcheck}
+
+\sectionrule
+% --- New Words ---
+\begin{newwords}
+  \begin{description}[labelwidth=3.8cm, leftmargin=4.0cm]
+    \item[Assembly line] A production system where products move past stations, each adding a part.
+    \item[Welding] Joining two metal pieces by melting their edges together.
+    \item[Cobot] A collaborative robot designed to work safely alongside humans.
+    \item[Pick and place] A robot task: grab an item from one spot and put it in another.
+    \item[Conveyor belt] A moving belt that carries items through a factory.
+    \item[Palletising] Stacking finished goods onto a pallet for transport.
+  \end{description}
+\end{newwords}

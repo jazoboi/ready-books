@@ -1,0 +1,195 @@
+% ============================================================
+%  Chapter 3 — Wi-Fi and Routers
+%  The Secret Life of the Internet
+% ============================================================
+
+\chapter{Wi-Fi and Routers}
+
+\chapteropening{%
+  How does your tablet get to the internet if there is no wire plugged in?
+  Willa Wi-Fi and Rory Router have the answer!
+}
+\chapterbadge{Waves, Signals, and Router Magic}
+
+% --- Opening story ---
+\section*{The Invisible Bridge}
+
+Before Dot could zoom off through the internet, there was a problem.
+
+Sam's tablet was sitting on the sofa.
+There was no wire connecting it to anything.
+
+\begin{center}
+  \Large\bfseries\color{WarmOrange}
+  ``How does the signal get OUT of my tablet?''
+\end{center}
+
+A friendly shimmer appeared in the air.
+It was Willa Wi-Fi — not a person exactly, more like a warm glow of colourful waves.
+
+\character{Willa Wi-Fi}{That's me!  I carry signals through the air, like invisible ripples on a pond.
+  You can't see me, but I'm always here, helping your device reach the router.}
+
+\vspace{6pt}
+
+\begin{picturethis}
+  Drop a pebble in a still pond.
+  Ripples spread out in rings from the centre.
+  Wi-Fi works just like that —
+  only instead of water ripples, it uses \textbf{radio waves} spreading from the router.
+  Your tablet can feel those waves and use them to send and receive information.
+\end{picturethis}
+
+\sectionrule
+
+% --- What is Wi-Fi ---
+\section*{What Is Wi-Fi?}
+
+\term{Wi-Fi} is a technology that lets devices connect to a network using radio waves instead of cables.
+The radio waves carry information back and forth between your device and a \term{router}.
+
+Wi-Fi is very convenient — you can move around a room, wander to the kitchen, or sit in the garden,
+and as long as you are close enough to the router, you stay connected.
+
+Common devices that use Wi-Fi:
+\begin{itemize}
+  \item Tablets and smartphones
+  \item Laptops
+  \item Smart TVs
+  \item Game consoles
+  \item Smart speakers
+\end{itemize}
+
+\begin{funfact}
+Wi-Fi uses radio waves on two main frequencies — 2.4 GHz (travels further) and 5 GHz (faster but shorter range). Your router might use both at the same time!
+\end{funfact}
+
+\sectionrule
+
+% --- What is a router? ---
+\section*{Meet Rory Router}
+
+Down the hall, sitting on a shelf, was a small box with little blinking lights.
+That was Rory Router.
+
+\character{Rory Router}{Hi there!  I'm the one who directs traffic.
+  Every time a device in this house wants to reach the internet,
+  the message comes to me first.
+  I figure out the best path and send it on its way.}
+
+A \term{router} is a device that sits in your home (or school, or cafe) and does two key jobs:
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item It connects all the devices in your home together into a \term{local network}.
+  \item It connects that local network to the wider internet through a cable that leads to your \term{ISP}.
+\end{enumerate}
+
+\begin{picturethis}
+  Imagine Rory Router as the postmaster of a small village.
+  Every letter (piece of information) that comes into the village
+  passes through Rory.
+  Rory reads the address and sends each letter to exactly the right home.
+  And when villagers want to send letters to the outside world,
+  Rory posts them on their behalf.
+\end{picturethis}
+
+\sectionrule
+
+% --- Journey step by step ---
+\section*{The Journey From Tablet to Internet}
+
+\begin{quickmap}
+  \textbf{How Dot leaves Sam's tablet and reaches the internet:}
+  \begin{enumerate}[label=\textbf{\arabic*.}]
+    \item Sam presses play on a video.
+    \item The tablet sends a request as radio waves through Wi-Fi.
+    \item Willa Wi-Fi carries those waves to the router.
+    \item Rory Router receives the request and checks where it needs to go.
+    \item Rory sends the request out through a cable to the ISP.
+    \item The ISP forwards it to the wider internet.
+    \item The answer (the video data) travels back the same way.
+    \item The tablet receives the data and the video plays!
+  \end{enumerate}
+\end{quickmap}
+
+\begin{diagram}[A home network with one router connecting many devices.]
+  \resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[>=Stealth]
+    \node[draw=LeafGreen!80!black, rounded corners, fill=LeafGreen!20, minimum width=2.4cm, minimum height=1cm] (router) at (0,0) {Router};
+    \node[draw=InternetBlue, rounded corners, fill=SkyBlue!20, minimum width=2.3cm, minimum height=0.85cm] (tablet) at (0,2.4) {Tablet};
+    \node[draw=WarmOrange!80!black, rounded corners, fill=WarmOrange!20, minimum width=2.3cm, minimum height=0.85cm] (laptop) at (2.7,1.2) {Laptop};
+    \node[draw=CoralRed!80!black, rounded corners, fill=CoralRed!16, minimum width=2.3cm, minimum height=0.85cm] (phone) at (2.7,-1.2) {Phone};
+    \node[draw=SoftPurple!80!black, rounded corners, fill=SoftPurple!18, minimum width=2.3cm, minimum height=0.85cm] (tv) at (0,-2.4) {Smart TV};
+    \node[draw=SunYellow!70!black, rounded corners, fill=SunYellow!25, minimum width=2.8cm, minimum height=0.85cm] (speaker) at (-2.8,0) {Smart Speaker};
+    \node[draw=InternetBlue!80!black, rounded corners, fill=InternetBlue!12, minimum width=2.5cm, minimum height=1cm] (cloud) at (6.1,0) {Internet};
+
+    \draw[dashed,thick,InternetBlue] (router) -- node[midway,above,sloped]{Wi-Fi} (tablet);
+    \draw[dashed,thick,InternetBlue] (router) -- node[midway,above,sloped]{Wi-Fi} (laptop);
+    \draw[dashed,thick,InternetBlue] (router) -- node[midway,below,sloped]{Wi-Fi} (phone);
+    \draw[dashed,thick,InternetBlue] (router) -- node[midway,below,sloped]{Wi-Fi} (tv);
+    \draw[dashed,thick,InternetBlue] (router) -- node[midway,above,sloped]{Wi-Fi} (speaker);
+    \draw[thick,->,InternetBlue] (router) -- (cloud);
+  \end{tikzpicture}%
+  }
+\end{diagram}
+
+\sectionrule
+
+% --- Wi-Fi vs wired ---
+\section*{Wi-Fi vs a Cable — What's the Difference?}
+
+Some devices connect to the router using a physical cable called an \term{Ethernet cable}.
+This is often faster and more reliable than Wi-Fi, but you have to stay in one place.
+
+\begin{center}
+  \begin{tabularx}{\linewidth}{>{\bfseries}l Y Y}
+    Feature    & Wi-Fi                & Ethernet cable \\
+    Movement   & Move around freely   & Must stay near the cable \\
+    Speed      & Very fast            & Usually faster \\
+    Reliability & Can drop in some spots & Very stable \\
+    Common use & Phones, tablets, laptops & Desktop computers, smart TVs \\
+  \end{tabularx}
+\end{center}
+
+\sectionrule
+
+\begin{newwords}
+  \begin{description}[labelwidth=3.2cm, leftmargin=3.4cm]
+    \item[\term{Wi-Fi}]         Wireless technology that uses radio waves to connect devices to a network.
+    \item[\term{Router}]        A device that connects your home network to the internet and directs traffic.
+    \item[\term{Radio waves}]   Invisible energy waves that carry Wi-Fi signals through the air.
+    \item[\term{Local network}] The private network inside your home that connects your devices together.
+    \item[\term{Ethernet}]      A cable that connects a device directly to a router.
+  \end{description}
+\end{newwords}
+
+\sectionrule
+
+\begin{tryit}
+  \textbf{Trace the path!}
+
+  On paper, draw:
+  \begin{itemize}
+    \item A tablet in the bedroom.
+    \item A router in the hallway.
+    \item Wavy lines from the tablet to the router (those are Wi-Fi radio waves!).
+    \item A solid line from the router to a big cloud labelled \textbf{The Internet}.
+  \end{itemize}
+
+  Now label each part:
+  \emph{device, Wi-Fi signal, router, ISP cable, internet}.
+
+  Can you add a phone, a laptop, and a TV all connecting to the same router?
+\end{tryit}
+
+\sectionrule
+
+\begin{bigidea}
+  \textbf{Wi-Fi} carries signals through the air using radio waves.
+  The \textbf{router} receives those signals and connects your home
+  to the wider internet — directing traffic in and out.
+\end{bigidea}
+
+\character{Dot}{We've left the house!
+  Now we're zooming toward a huge building full of powerful computers.
+  Let's go meet Sunny Server!}

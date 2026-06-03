@@ -1,0 +1,200 @@
+% ============================================================
+%  Chapter 7 — Search Engines
+%  The Secret Life of the Internet
+% ============================================================
+
+\chapter{Search Engines}
+
+\chapteropening{%
+  There are billions of pages on the internet.
+  How do you find exactly the one you need?
+  Scout Search has a very, very big index!
+}
+\chapterbadge{Detective Time with Scout Search}
+
+% --- Opening story ---
+\section*{The World's Biggest Library}
+
+Imagine a library with one billion books.
+Walking along the shelves looking for one title could take years.
+
+Sam had a question: ``How do rainbows form?''
+But there were billions of pages on the internet.
+Where to start?
+
+A figure appeared, wearing a long coat and holding a giant flashlight and a stack of index cards.
+That was Scout Search.
+
+\character{Scout Search}{Don't worry! 
+  I've already visited every page on the internet,
+  read them all, and made a huge organised list.
+  Tell me your question and I'll find the best answers in a flash!}
+
+\sectionrule
+
+% --- What is a search engine? ---
+\section*{What Is a Search Engine?}
+
+A \term{search engine} is a service that helps you find information on the internet.
+
+\begin{funfact}
+Google's search index contains hundreds of billions of web pages and is over 100 million gigabytes in size!
+\end{funfact}
+
+You type a question or some keywords into a search box.
+The search engine looks through its enormous index and shows you a list of pages
+that are likely to help.
+
+\begin{picturethis}
+  Imagine a super-organised librarian who has read every single book in the library.
+  She has written a card for every word in every book,
+  saying which books contain that word and on which page.
+  When you ask for help, she checks the cards and brings you the most useful books first.
+  That librarian is a search engine.
+  The cards are the \textbf{index}.
+\end{picturethis}
+
+\sectionrule
+
+% --- How does a search engine work? ---
+\section*{How Does a Search Engine Work?}
+
+A search engine has three main jobs:
+
+\subsection*{1. Crawling}
+
+Special programmes called \term{crawlers} (or ``spiders'' or ``bots'') roam the internet
+constantly, visiting web pages.
+When a crawler finds a page, it follows all the links on that page to find more pages,
+then follows the links on those pages — and so on, endlessly.
+
+\begin{picturethis}
+  Imagine a spider walking across a huge web.
+  Every point on the web connects to more threads.
+  The spider visits every point, reads what is there, and notes it down.
+  That is what a web crawler does.
+\end{picturethis}
+
+\subsection*{2. Indexing}
+
+After crawling, the search engine builds an \term{index} —
+a massive organised list of words, phrases, and topics,
+linked to all the pages where they appear.
+
+This index is so large it would fill millions of filing cabinets,
+but computers can search through it in less than a second.
+
+\subsection*{3. Ranking}
+
+When you type a search query, the search engine does not just list every matching page.
+It \term{ranks} them — it tries to show you the most useful, trustworthy, and relevant pages first.
+
+Ranking is decided by many signals, including:
+\begin{itemize}
+  \item How many other websites link to a page (if lots of people point to it, it is probably useful).
+  \item How well the words on the page match your question.
+  \item How new or up-to-date the page is.
+  \item How easy the page is to read.
+\end{itemize}
+
+\begin{diagram}[From crawling pages to ranking the best results.]
+  \resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[>=Stealth, node distance=1.3cm]
+    \node[draw=InternetBlue, rounded corners, fill=SkyBlue!25, minimum width=2.5cm, minimum height=1cm] (web) {Web Pages};
+    \node[draw=WarmOrange!80!black, rounded corners, fill=WarmOrange!20, minimum width=2.4cm, minimum height=1cm, right=of web] (crawl) {Crawling \faSpider};
+    \node[draw=LeafGreen!80!black, rounded corners, fill=LeafGreen!20, minimum width=2.2cm, minimum height=1cm, right=of crawl] (index) {Index};
+    \node[draw=SoftPurple!80!black, rounded corners, fill=SoftPurple!20, minimum width=2.4cm, minimum height=1cm, right=of index] (rank) {Ranking \faTrophy};
+    \node[draw=CoralRed!80!black, rounded corners, fill=CoralRed!16, minimum width=2.8cm, minimum height=1cm, right=of rank] (results) {Search Results};
+
+    \draw[thick,->,InternetBlue] (web) -- (crawl);
+    \draw[thick,->,InternetBlue] (crawl) -- (index);
+    \draw[thick,->,InternetBlue] (index) -- (rank);
+    \draw[thick,->,InternetBlue] (rank) -- (results);
+  \end{tikzpicture}%
+  }
+\end{diagram}
+
+\sectionrule
+
+% --- Search tips ---
+\section*{Searching Smarter}
+
+\character{Scout Search}{Not all search words are equal!
+  The better your search words, the better the results.
+  Think of it like describing something clearly to a new friend.}
+
+\begin{quickmap}
+  \textbf{Good vs better search words:}
+  \begin{center}
+    \begin{tabularx}{\linewidth}{>{\bfseries}l Y}
+      Vague search & Better search \\
+      ``rainbow''  & ``how do rainbows form'' \\
+      ``animal''   & ``largest animal in the ocean'' \\
+      ``fix''      & ``how to fix a bicycle puncture'' \\
+      ``food''     & ``healthy snack ideas for kids'' \\
+    \end{tabularx}
+  \end{center}
+\end{quickmap}
+
+Specific words help the search engine understand exactly what you want.
+
+\sectionrule
+
+% --- Being a critical reader ---
+\section*{Are All Results True?}
+
+Search engines are very good at finding pages — but not every page on the internet is accurate.
+
+\begin{itemize}
+  \item Look for well-known, trusted sources: encyclopaedias, museums, universities.
+  \item If something seems surprising, check it in more than one place.
+  \item Ask a trusted adult if you are not sure whether a result is reliable.
+\end{itemize}
+
+\begin{bigidea}
+  Search engines are incredibly helpful, but you still need to think!
+  Being a good searcher also means being a \textbf{careful reader}.
+\end{bigidea}
+
+\sectionrule
+
+\begin{newwords}
+  \begin{description}[labelwidth=3.2cm, leftmargin=3.4cm]
+    \item[\term{Search engine}] A service that helps you find information on the internet by searching an index.
+    \item[\term{Crawler}]       A programme that visits web pages automatically to gather information for the index.
+    \item[\term{Index}]         The huge organised list of words and pages that a search engine builds.
+    \item[\term{Ranking}]       The process of sorting search results to show the most useful ones first.
+    \item[\term{Query}]         The words or question you type into a search box.
+  \end{description}
+\end{newwords}
+
+\sectionrule
+
+\begin{tryit}
+  \textbf{Write the best search words!}
+
+  For each question below, write the search words you would use:
+
+  \begin{enumerate}
+    \item You want to know what pandas eat.
+    \item You want to find a recipe for banana bread.
+    \item You want to learn the name of the tallest mountain.
+    \item You want to know how a rainbow forms.
+    \item You want to find out when the next solar eclipse will happen.
+  \end{enumerate}
+
+  \emph{Compare your answers with a friend.
+  Whose search words do you think Scout Search would find most useful?}
+\end{tryit}
+
+\sectionrule
+
+\begin{bigidea}
+  A \textbf{search engine} crawls the internet, builds a giant index, and ranks results
+  so you can find the most useful pages in seconds.
+  Good search words and careful reading are your best tools.
+\end{bigidea}
+
+\character{Scout Search}{Now you know how to search like a pro!
+  Next up — what IS the cloud?  Is it really made of water vapour?
+  Spoiler: not quite.  Cloud Pal will explain!}

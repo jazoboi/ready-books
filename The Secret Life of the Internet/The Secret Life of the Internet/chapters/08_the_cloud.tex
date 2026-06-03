@@ -1,0 +1,203 @@
+% ============================================================
+%  Chapter 8 — The Cloud
+%  The Secret Life of the Internet
+% ============================================================
+
+\chapter{The Cloud}
+
+\chapteropening{%
+  People say things are ``in the cloud''.
+  But what does that actually mean?
+  Cloud Pal is here to reveal the surprising truth!
+}
+\chapterbadge{Cloud Clues Unlocked}
+
+% --- Opening story ---
+\section*{The Reveal}
+
+Sam had drawn a picture on the tablet.
+The tablet said: ``Saved to the cloud.''
+
+Sam looked out the window at the grey, rainy sky.
+
+\begin{center}
+  \Large\itshape\color{InternetBlue}
+  ``Is my drawing floating up there somewhere?''
+\end{center}
+
+A fluffy, smiling cloud shape floated over.
+But then it unzipped itself — and inside was a row of servers, blinking lights and all.
+
+\character{Cloud Pal}{Surprise!  I'm not actually a sky cloud.
+  That is just the nickname people gave me because I seem magical and hard to see.
+  Really, I am just computers — lots and lots of computers — in buildings far away.
+  And right now, your drawing is safely stored on one of them!}
+
+\sectionrule
+
+% --- What is the cloud? ---
+\section*{What Is the Cloud?}
+
+\term{The cloud} is a way of storing, accessing, and using files, programmes, and computing power
+on servers located far away from your device — via the internet.
+
+\begin{funfact}
+Every minute, people upload around 500 hours of video to YouTube, share 695,000 Instagram Stories, and send 16 million text messages — all stored in the cloud!
+\end{funfact}
+
+Instead of keeping everything on your own tablet or laptop,
+the cloud lets you keep things on servers somewhere else.
+As long as you have an internet connection, you can get to your stuff
+from any device, anywhere in the world.
+
+\begin{picturethis}
+  Imagine you kept all your favourite toys in a giant warehouse instead of your bedroom.
+  Any time you wanted to play with one, you could ask the warehouse to send it to you.
+  When you visited your grandparents and wanted your favourite toy,
+  you could get it there too — same warehouse, different location.
+  \textbf{The cloud is that warehouse. The internet is the road to it.}
+\end{picturethis}
+
+\sectionrule
+
+% --- What can the cloud do? ---
+\section*{What Can the Cloud Do?}
+
+\subsection*{Cloud Storage}
+
+Cloud storage means saving your files on remote servers.
+
+\begin{itemize}
+  \item Photos you take on a phone can be automatically backed up to the cloud.
+  \item If you lose or break your phone, the photos are still safe.
+  \item You can look at those photos on a laptop, tablet, or a friend's phone.
+\end{itemize}
+
+\subsection*{Cloud Programmes}
+
+Some programmes live in the cloud and run on servers, not your device.
+
+\begin{itemize}
+  \item You write a document in a browser tab — the document is stored on a cloud server.
+  \item Multiple people can work on the same document at the same time, from different countries.
+\end{itemize}
+
+\subsection*{Cloud Computing}
+
+Really powerful computing tasks can be done on cloud servers.
+
+\begin{itemize}
+  \item Scientists analysing huge amounts of data can rent cloud computing power.
+  \item Games can run on cloud servers and stream to your screen like a video.
+\end{itemize}
+
+\sectionrule
+
+% --- The cloud is real buildings ---
+\section*{The Cloud Is Very Much on the Ground}
+
+\character{Cloud Pal}{I know — calling it a cloud is a bit misleading.
+  Really, I am data centres — big buildings full of servers, cooling systems, and cables.
+  The clouds in the diagrams are just a shorthand for saying
+  ``somewhere on the internet — we don't need to know exactly where.'' }
+
+Big companies run enormous cloud services around the world.
+These data centres consume a lot of electricity and water for cooling,
+so engineers are always working on ways to make them more efficient and environmentally friendly.
+
+\sectionrule
+
+% --- Benefits and things to know ---
+\section*{Why the Cloud Is Useful}
+
+\begin{quickmap}
+  \textbf{Cloud benefits at a glance:}
+  \begin{itemize}
+    \item \textbf{Access anywhere} — your files are available on any device.
+    \item \textbf{Backup and safety} — if your device breaks, your data is not lost.
+    \item \textbf{Sharing} — easily share files or work on them together.
+    \item \textbf{No need for huge storage} — your device does not need to hold everything.
+  \end{itemize}
+\end{quickmap}
+
+\begin{diagram}[Devices connect through the internet to cloud servers and data centres.]
+  \resizebox{\linewidth}{!}{%
+  \begin{tikzpicture}[>=Stealth]
+    \node[draw=WarmOrange!80!black, rounded corners, fill=WarmOrange!20, minimum width=1.9cm, minimum height=0.8cm] (phone) at (-4.2,2.2) {Phone};
+    \node[draw=InternetBlue, rounded corners, fill=SkyBlue!20, minimum width=2.1cm, minimum height=0.8cm] (laptop) at (-1.8,2.2) {Laptop};
+    \node[draw=LeafGreen!80!black, rounded corners, fill=LeafGreen!20, minimum width=1.9cm, minimum height=0.8cm] (tablet) at (0.6,2.2) {Tablet};
+    \node[draw=SoftPurple!80!black, rounded corners, fill=SoftPurple!16, minimum width=1.9cm, minimum height=0.8cm] (watch) at (3.0,2.2) {Smartwatch};
+
+    \node[cloud,draw=InternetBlue!80!black,fill=InternetBlue!12,minimum width=5.6cm,minimum height=2.7cm,cloud puffs=14,cloud puff arc=110] (cloud) at (-0.7,0.1) {};
+    \node at (-1.1,0.85) {\small\bfseries Cloud};
+    \node[draw=DarkText, rounded corners, fill=LightGray, minimum width=0.8cm, minimum height=0.42cm] at (-1.9,-0.05) {};
+    \node[draw=DarkText, rounded corners, fill=LightGray, minimum width=0.8cm, minimum height=0.42cm] at (-1.0,-0.05) {};
+    \node[draw=DarkText, rounded corners, fill=LightGray, minimum width=0.8cm, minimum height=0.42cm] at (-0.1,-0.05) {};
+    \node[draw=DarkText, rounded corners, fill=LightGray, minimum width=0.8cm, minimum height=0.42cm] at (0.8,-0.05) {};
+
+    \node[draw=CoralRed!80!black, rounded corners, fill=CoralRed!16, minimum width=2.4cm, minimum height=1cm] (dc) at (4.8,0.1) {data centre};
+
+    \draw[thick,->,InternetBlue] (phone) -- (cloud);
+    \draw[thick,->,InternetBlue] (laptop) -- (cloud);
+    \draw[thick,->,InternetBlue] (tablet) -- (cloud);
+    \draw[thick,->,InternetBlue] (watch) -- (cloud);
+    \draw[thick,->,InternetBlue] (cloud) -- node[above]{via the Internet} (dc);
+  \end{tikzpicture}%
+  }
+\end{diagram}
+
+\subsection*{Things to Think About}
+
+\begin{itemize}
+  \item You need an internet connection to access cloud files.
+  \item You are trusting a company to keep your files safe and private.
+  \item It is good to know that the cloud is not magic — it is real physical computers
+        that need electricity, maintenance, and protection.
+\end{itemize}
+
+\sectionrule
+
+\begin{newwords}
+  \begin{description}[labelwidth=3.5cm, leftmargin=3.7cm]
+    \item[\term{The cloud}]       Servers accessed via the internet, used to store data or run programmes remotely.
+    \item[\term{Cloud storage}]   Saving files on remote servers so they can be reached from any device.
+    \item[\term{Backup}]          A copy of data stored safely somewhere else in case the original is lost.
+    \item[\term{Streaming}]       Receiving and using data (like a video or game) directly from a server as you need it.
+    \item[\term{Remote server}]   A server that is in a different physical location from the user.
+  \end{description}
+\end{newwords}
+
+\sectionrule
+
+\begin{tryit}
+  \textbf{On the device or in the cloud?}
+
+  For each of the following, mark whether it is likely stored \textbf{on your device}
+  or \textbf{in the cloud}:
+
+  \begin{center}
+    \begin{tabularx}{\linewidth}{Ycc}
+      \textbf{Thing} & \textbf{On device?} & \textbf{In the cloud?} \\
+      \hline
+      A photo automatically backed up & $\circ$ & $\circ$ \\
+      An app you downloaded & $\circ$ & $\circ$ \\
+      A shared document you edit in a browser & $\circ$ & $\circ$ \\
+      A song saved for offline listening & $\circ$ & $\circ$ \\
+      A video you are streaming right now & $\circ$ & $\circ$ \\
+    \end{tabularx}
+  \end{center}
+
+  \emph{(Hint: many things can be both!  A song might be stored on your device AND in the cloud.)}
+\end{tryit}
+
+\sectionrule
+
+\begin{bigidea}
+  \textbf{The cloud} is not floating in the sky —
+  it is servers in buildings on the ground, connected to you through the internet.
+  It lets you store, share, and access your files and programmes from anywhere.
+\end{bigidea}
+
+\character{Cloud Pal}{You have learned so much on this journey!
+  The last chapter is all about \textbf{you} — how to be a smart, safe, and curious explorer
+  in this amazing internet world.  See you at the finish line!}
